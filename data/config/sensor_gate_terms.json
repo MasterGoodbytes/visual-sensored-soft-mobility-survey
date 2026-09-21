@@ -1,0 +1,74 @@
+{
+    "_README": "Root-form gate terms for the retrieve-then-verify sensor classifier (notebook 06_2). These SUPPLEMENT sensor_technology_domains.json: the gate for a category fires when any of that category's own keyword phrases OR any of these root terms occurs literally in the scoring text. They exist because most entries in sensor_technology_domains.json are compound phrases ('microphone array', 'traffic camera'), so an article that simply says 'we used a microphone' would not match anything. A term is included here only if a plausible sentence using it, without any other gate term present, still names a physical instrument or a directly-measured physical quantity -- not a technique, a platform, or a rendering/visualization concept. Deployment-architecture and platform/carrier terms (internet of things, sensor node, wireless sensor network, crowd sensing, participatory sensing, mobile sensing, wearable, smartphone) and processing-technique terms (deep learning, semantic segmentation, computer vision) are deliberately excluded: mixing those in is what produced the 83% false-positive rate previously diagnosed in the Atmospheric category.\n\nDELIBERATE EXCEPTION: 'lidar' is included even though it is redundant with sensor_technology_domains.json (already there, and matching is case-insensitive, so 'LiDAR'/'Lidar' already matched) -- kept for readability of this file, no functional effect either way.\n\nDELIBERATE EXCEPTION, HIGHER RISK: '3d' was added to Active Ranging and 3D Scanning at the project owner's request, against the maintainer's recommendation. It is generic and can fire on non-instrument mentions -- '3D city model', '3D visualization', '3D urban design' name no ranging sensor; a confirmed test case (a virtual-reality city walk whose meshes came from photogrammetry, not a range sensor) matches '3d' alone. Kept per explicit instruction. If the per-category gate-term-frequency diagnostic (notebook cell 12) shows '3d' as the dominant or sole hit for a large share of Active Ranging assignments, that is the signal this tradeoff needs revisiting.\n\nKnown accepted cost: articles that name no instrument anywhere in the scoring text (e.g. crowd-sensing systems described purely at the architecture level, or walkability-index studies with no sensing component) are not gated by any category and score 0.0. That is a coverage limitation to report, not a reason to add architecture terms. Matching is case-insensitive, tolerant of hyphen/space variation and simple plurals.",
+    "Optical Imaging": [
+        "camera",
+        "imagery",
+        "photograph",
+        "image dataset",
+        "image data",
+        "streetscape imagery",
+        "panoramic imagery",
+        "photogrammetric"
+    ],
+    "Active Ranging and 3D Scanning": [
+        "point cloud",
+        "laser scan",
+        "3d scan",
+        "3d",
+        "lidar",
+        "depth sensor",
+        "range sensor",
+        "rangefinder",
+        "time-of-flight"
+    ],
+    "Acoustic Sensing": [
+        "microphone",
+        "sound level",
+        "noise measurement",
+        "noise level measurement",
+        "audio recording",
+        "acoustic measurement"
+    ],
+    "Inertial Motion Sensing": [
+        "imu",
+        "accelerometer data",
+        "acceleration signal",
+        "inertial data"
+    ],
+    "Positioning and Localization": [
+        "ble beacon",
+        "uwb",
+        "ultra-wideband",
+        "gps trajectory",
+        "gps track",
+        "positioning system"
+    ],
+    "Atmospheric and Environmental Sensing": [
+        "air quality",
+        "air pollution measurement",
+        "particulate matter",
+        "pm2.5",
+        "pm10",
+        "no2 concentration",
+        "pollutant concentration",
+        "microclimate measurement",
+        "meteorological station",
+        "thermal comfort",
+        "outdoor thermal comfort",
+        "microclimate",
+        "heat exposure",
+        "mean radiant temperature",
+        "globe temperature",
+        "utci",
+        "air temperature"
+    ],
+    "Physiological Sensing": [
+        "heart rate",
+        "eda signal",
+        "gsr",
+        "eeg",
+        "ecg",
+        "eye-tracking",
+        "gaze data"
+    ]
+}

@@ -5,7 +5,7 @@
   },
   {
     "text": "Bluetooth and infrared counting to characterise pedestrian volumes on a waterfront promenade. Understanding temporal patterns of pedestrian use supports management of public space. Infrared beam counters and Bluetooth detectors were deployed at eight gateways along a waterfront promenade for one year. Counts were corrected for device-specific detection rates estimated through manual calibration sessions. Seasonal, weekly and diurnal profiles were derived and related to weather records, revealing strong sensitivity of promenade use to thermal conditions and precipitation.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Depth camera assessment of step height and kerb geometry at pedestrian crossings. Kerb geometry determines whether a crossing is negotiable by users with reduced mobility. A handheld depth camera was used to capture the crossing geometry at 340 intersections, from which kerb height, ramp gradient and gutter depth were reconstructed. Measurements were compared with manual gauge readings on a validation subset, showing millimetre-level agreement. Nearly half of surveyed crossings exceeded the maximum permissible kerb height, and non-compliance was more frequent on secondary streets.",
@@ -93,7 +93,7 @@
   },
   {
     "text": "Low-cost distributed sensing of footway occupancy in a market district. Understanding when footways become crowded supports management of shared space. Passive infrared and time-of-flight units were mounted at pedestrian height along footways in a market district and recorded occupancy at short intervals for six months. Counts were calibrated against synchronised video. Occupancy exceeded comfortable density thresholds during market hours on segments where stalls reduced usable width, quantifying a conflict previously reported only anecdotally.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Pedestrian-height wind and turbulence measurement around tall building podiums. Podium design influences ground-level wind conditions. Ultrasonic anemometers were installed at pedestrian height around three tall building podiums of differing geometry and recorded for twelve months. Gust equivalent mean speeds were computed and classified against comfort and safety criteria. Podium setback and canopy presence were associated with measurable reductions in exceedance frequency, and measurements were compared with wind tunnel predictions for the same sites.",
@@ -169,7 +169,7 @@
   },
   {
     "text": "Comparing composite walkability scores for predicting commuting mode. Different index formulations may classify the same neighbourhood inconsistently. In the empirical work, four GIS-based scores were calculated from census, parcel and road-network data and related to commute mode reported in a household travel survey. Predictive performance varied with buffer definition and weighting scheme. The work concerns index construction from existing geospatial records rather than sensing pedestrian environments.",
-    "label": "Not related"
+    "label": "Sensing of walkability dimension"
   },
   {
     "text": "Stereo vision measurement of sidewalk pinch points in dense commercial blocks. Pedestrian capacity is frequently constrained by short bottlenecks that disappear in parcel-scale width records. To address this issue, calibrated stereo cameras mounted on a walking rig reconstructed sidewalk edges and temporary objects during morning, midday and evening surveys. The effective corridor narrowed below 1.2 metres at loading zones and outdoor dining areas, with strong time-of-day variation. Repeated sensing revealed where management measures could recover usable walking space.",
@@ -201,7 +201,7 @@
   },
   {
     "text": "School-neighbourhood walkability and children's independent mobility. Parents completed travel and independence questionnaires, while school-area walkability was computed from land-use and network datasets. Intersection density and destination access were positively associated with independent trips. These observations are important because environmental context may influence whether children travel without adult accompaniment. The study does not instrument or directly measure the walking environment.",
-    "label": "Not related"
+    "label": "Sensing of walkability dimension"
   },
   {
     "text": "Meta-analysis of built environment correlates of walking. Evidence on environmental determinants of walking is distributed across disciplines. The proposed workflow combined field acquisition and analysis: published effect estimates for density, connectivity, land-use mix and perceived safety were synthesised using random-effects models. Associations were strongest for transport walking and weaker for recreation. As a secondary review, the work contains no primary sensing of walkability dimensions.",
@@ -237,7 +237,7 @@
   },
   {
     "text": "Development of a rural walkability index from open data. Most walkability measures have been designed for dense urban settings. The study therefore used the following approach: road connectivity, population distribution, services and slope were combined from open geospatial datasets and weighted through expert judgement. The resulting score differentiated village centres from dispersed settlements. The contribution is a GIS index rather than sensing of physical walking environments.",
-    "label": "Not related"
+    "label": "Sensing of walkability dimension"
   },
   {
     "text": "Transit-oriented development and neighbourhood walking frequency. Access to high-capacity transit may influence local walking. In the empirical work, station proximity and development intensity were derived from planning databases, while walking frequency came from repeated travel surveys. Residents near mature station areas reported more utilitarian walking. The study uses regional land-use indicators and survey outcomes without environmental sensing.",
@@ -341,7 +341,7 @@
   },
   {
     "text": "Eye-tracking study of pedestrian detection of approaching bicycles. Shared crossings require pedestrians to recognise fast and quiet bicycle movements. Participants crossed instrumented paths wearing mobile eye trackers while overhead cameras recorded bicycle approach speed and yielding behaviour. Late fixation on cyclists was associated with visual clutter and oblique approach geometry. The findings identify environmental features that reduce perceptual safety for walkers.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Street-view analysis of cyclists' route preferences. Bicycle GPS trajectories were linked to segmented street-view indicators and analysed with a path-choice model. Cyclists preferred separated facilities and greener routes. These observations are important because cycling route choice may respond to greenery and roadway design. The outcome is cycling behaviour, so the work does not assess pedestrian walkability.",
@@ -357,7 +357,7 @@
   },
   {
     "text": "Pressure-mat sensing of waiting-space crowding at transit crossings. Thin pressure mats and overhead depth cameras measured occupancy and standing distribution at crossings beside busy transit stops. This design responds to the fact that crowded waiting areas can spill pedestrians into the carriageway before the signal changes. Spillover occurred when shelter placement reduced usable waiting depth, particularly during vehicle arrival peaks. The results quantify a design interaction between transit facilities and pedestrian crossing comfort.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Vehicle-mounted vibration detection of carriageway potholes. Fleet-based sensing can accelerate road maintenance. Accelerometers on buses recorded vertical shocks that were classified and georeferenced. Detected potholes were confirmed through road inspection. The pilot covered arterial and residential road segments under different traffic loads.. The target is the vehicle carriageway, not surfaces used by pedestrians.",
@@ -377,7 +377,7 @@
   },
   {
     "text": "Thermal-camera observation of pedestrian yielding after dark. Conventional video can undercount pedestrians in poorly illuminated environments. In the empirical work, thermal cameras recorded crossing attempts and driver yielding at unsignalised sites over winter evenings, with trajectories extracted automatically. Yielding probability declined with vehicle speed and when pedestrians waited beyond the main beam of street lighting. The sensor choice enabled reliable behavioural measurement under conditions relevant to night-time walkability.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Cyclist conflict detection at signalised intersections. Automated trajectory analysis can reveal near misses not captured in crash records. The study therefore used the following approach: video tracking reconstructed cyclist and vehicle paths and computed surrogate safety indicators. Conflicts concentrated during permitted turning phases. The analysis concerns bicycle safety and intersection operation rather than walkability sensing.",
@@ -593,7 +593,7 @@
   },
   {
     "text": "Regional climate projection of future walkability. A composite index was adjusted using projected temperature and humidity from climate models. This design responds to the fact that heat may reduce the seasonal suitability of walking. Summer scores declined under high-emission scenarios. The analysis uses modelled climate and GIS indicators rather than direct sensing.",
-    "label": "Not related"
+    "label": "Sensing of walkability dimension"
   },
   {
     "text": "Respiratory monitoring during walking beside high-traffic corridors. Environmental burden may be reflected in short-term physiological response during ordinary trips. The proposed workflow combined field acquisition and analysis: portable spirometry and breathing-rate sensors were combined with pollutant and location measurements as participants followed matched arterial and interior routes. Higher particle exposure was accompanied by elevated respiratory rate among susceptible participants. The integrated sensing connects route conditions with immediate pedestrian experience.",
@@ -605,7 +605,7 @@
   },
   {
     "text": "Mobile eye tracking of wayfinding failure in complex interchanges. Confusing visual information can increase walking time and anxiety. First-time users navigated transfer routes wearing eye-tracking glasses while their trajectories and pauses were logged. Missed decisions occurred where competing signs attracted fixation and directional continuity was weak. The findings quantify legibility as an experiential component of pedestrian accessibility.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Validation of step counters in cane users. Activity monitors may miscount steps when mobility aids are used. In the empirical work, leg- and cane-mounted devices were compared with video counts across indoor surfaces. Leg placement provided higher accuracy. The study evaluates a clinical measurement device, not walkability.",
@@ -661,7 +661,7 @@
   },
   {
     "text": "Wi-Fi and thermal counting of pedestrian dwell in civic squares. Simple entry counts do not distinguish passage from meaningful use of public space. Accordingly, anonymous wireless detections were fused with thermal-camera tracks to estimate visit duration and movement zones without retaining identifiable imagery. Dwell increased near shaded seating and declined sharply during high radiant heat. In practical terms, the approach measures how environmental quality influences pedestrian use.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Wearable monitoring of construction-worker workload. Workers wore heart-rate and motion sensors throughout shifts. This design responds to the fact that physical strain varies across occupational tasks. High-strain periods clustered during material handling. Task categories were annotated by observers for comparison with the sensor-derived estimates.. The occupational environment and outcome are unrelated to walkability assessment.",
@@ -677,7 +677,7 @@
   },
   {
     "text": "Passive infrared sensing of night-time footpath use. Low-power infrared counters were installed on paths with different lighting and surveillance characteristics for twelve months. Use declined more steeply after sunset on unevenly lit paths than on routes with comparable daytime volume. These observations are important because after-dark pedestrian activity is rarely measured on low-volume residential links. The findings connect delivered lighting conditions with actual walking behaviour.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Satellite NDVI and neighbourhood health outcomes. Greenness exposure may influence population health. In the empirical work, multispectral imagery produced vegetation indices around residential addresses and was linked to health surveys. Higher greenness was associated with better wellbeing. The study does not sense walking routes or pedestrian-scale environmental conditions.",
@@ -685,7 +685,7 @@
   },
   {
     "text": "Computer-vision measurement of queue spillback across sidewalks. Queues at shops and transit facilities can obstruct through movement. The proposed workflow combined field acquisition and analysis: fixed cameras tracked stationary and moving pedestrians at constrained frontages, separating queue occupancy from ordinary flow. Spillback events reduced through-walking speed and forced frequent carriageway incursions. The method quantifies a temporary accessibility condition.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Drone mapping of coastal dune morphology. Uncrewed aerial imagery and photogrammetry generated terrain models of dune systems. The motivation was that high-resolution topography supports coastal conservation. Volume change revealed erosion hotspots. Repeated surveys were aligned to a common ground-control network.. The setting and target are coastal landforms, not walkability.",
@@ -705,7 +705,7 @@
   },
   {
     "text": "Bluetooth sensing of route redistribution after a new crossing. Infrastructure changes may alter pedestrian route choice beyond the immediate site. To address this issue, calibrated Bluetooth detectors were placed on parallel streets before and after a signalised crossing opened, with manual counts used to estimate device detection rates. The treated route gained users while an informal crossing path declined. The network captures behavioural response to pedestrian infrastructure.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Airborne thermal mapping of urban heat islands. Thermal imagery from aircraft was related to land cover and building density. Hotspots concentrated in industrial districts. These observations are important because citywide surface temperature patterns inform climate adaptation. The measurement is roof- and surface-oriented rather than pedestrian-level thermal exposure.",
@@ -713,7 +713,7 @@
   },
   {
     "text": "Trajectory sensing of informal desire lines across public housing estates. Privacy-preserving overhead sensors recorded movement through open spaces across seasons, and recurrent trajectories were compared with paved connections. This design responds to the fact that official paths may not reflect the routes pedestrians actually use. Persistent desire lines formed where formal routes added distance or avoided shaded edges. The results identify network changes likely to improve everyday walkability.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "National lidar inventory of streetscape objects from above. Dense point clouds enable volumetric urban analysis. The proposed workflow combined field acquisition and analysis: airborne lidar was voxelised to estimate trees, walls and overhead structures. Small-object detection improved with higher pulse density. The aerial acquisition does not measure conditions from the walking perspective.",
@@ -721,7 +721,7 @@
   },
   {
     "text": "Automated measurement of pedestrian hesitation at complex junctions. Pause and reversal behaviour can indicate uncertainty even when trips are completed. The study therefore used the following approach: video tracking reconstructed trajectories at multi-leg intersections, and hesitation events were detected from speed and heading changes. Events clustered at locations with discontinuous markings and ambiguous refuge alignment. The indicator provides behavioural evidence of route legibility.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Remote sensing of informal settlement expansion. Timely mapping can support infrastructure planning. Satellite image time series were classified to detect new built-up areas. Expansion accelerated along transport corridors. Change maps were validated against planning records and selected field observations.. The study concerns land-cover change rather than sensing walkability.",

@@ -41,7 +41,7 @@
   },
   {
     "text": "Pedestrian volume estimation from wireless signal detection on commercial streets. Continuous pedestrian counts support evaluation of streetscape investment. Wireless probe request detection was deployed on commercial streets, with detection rates calibrated against synchronised manual counts and correction factors estimated for device carriage rates. Continuous volume estimates were produced for eighteen months spanning a public realm improvement. Post-intervention volumes rose significantly relative to comparison streets after controlling for weather and seasonality.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Combining street imagery segmentation and field spot measurements for comprehensive footway assessment. Image-based assessment scales well but cannot capture non-visual attributes. This study paired citywide segmentation of street imagery, yielding sidewalk presence, width and greenery, with stratified field measurement of surface roughness, illuminance and sound level at 300 sampled segments. A statistical model transferred the field-measured attributes to unmeasured segments using visual predictors. Cross-validation indicated acceptable transfer accuracy for illuminance and roughness but not for sound level.",
@@ -101,7 +101,7 @@
   },
   {
     "text": "Continuous footway counts using stereo cameras to evaluate a pedestrianisation scheme. Robust evaluation requires continuous measurement over an adequate period. Stereo cameras with automated detection recorded footway volumes and directional flows at treated and comparison streets for six months before and twelve months after a pedestrianisation scheme. Counts were validated against manual observation. Volumes on treated streets increased and stationary activity rose disproportionately, while comparison streets showed no equivalent change.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Quantifying facade maintenance and vacancy from street imagery as indicators of walking environment quality. Visible decline discourages walking. A multi-label classifier applied to street imagery detected boarded openings, peeling finishes, graffiti and vacancy indicators along commercial frontages, producing a maintenance index per segment. Agreement with trained auditors was substantial. Index values tracked changes across two image vintages and declined most sharply on segments where anchor retail units had closed.",
@@ -237,7 +237,7 @@
   },
   {
     "text": "Manual audit of school walking routes using a checklist. Auditors recorded sidewalk presence, crossing facilities, traffic and maintenance on paper forms, with duplicate visits used to assess reliability. Scores were mapped and discussed with school staff. Trained observers inspected routes to identify barriers faced by children. Inter-rater reliability was highest for sidewalk presence and lowest for maintenance and perceived security items.",
-    "label": "Not related"
+    "label": "Sensing of walkability dimension"
   },
   {
     "text": "Computer vision inventory of tactile paving colour contrast and continuity. Tactile guidance is less useful when visual contrast is weak or paths terminate unexpectedly. Methodologically, street-level images were processed to detect tactile surfaces, estimate colour contrast against surrounding pavement and trace continuity through intersections. Measurements were validated against spectrophotometer readings and on-site route checks. Low contrast was particularly common after resurfacing projects in which tactile units had been retained but adjacent materials changed.",
@@ -281,7 +281,7 @@
   },
   {
     "text": "Video analytics of turning conflicts across raised pedestrian tables. Fixed cameras tracked pedestrians, cyclists and turning vehicles at six treatments, deriving time-to-collision, yielding and path deviation measures. Trajectory accuracy was checked against manually annotated clips. Raised tables are intended to prioritise walking, yet driver interactions differ according to layout and traffic conditions. Sites with tighter corner radii produced more yielding and fewer pedestrian evasive movements than visually similar sites with flared approaches.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Agent-based simulation of pedestrian route choice under heat. Shadow surfaces were calculated from a digital city model and agents selected routes under alternative temperature scenarios. Outputs described predicted network use and planting scenarios. A behavioural model represented walkers who traded distance against simulated shade. Agents accepted modest detours when simulated shade benefits were high, producing substantial shifts in modelled route use.",
@@ -289,7 +289,7 @@
   },
   {
     "text": "Mobile eye tracking of visual search before complex road crossings. Pedestrians may fail to detect relevant traffic streams when crossings require attention to several directions. Methodologically, participants wore eye-tracking glasses while approaching multilane junctions, and gaze events were mapped to vehicles, signal heads, kerbs and refuge areas identified in scene video. Crossing decisions were coded independently from the gaze record. Longer visual search and repeated checks were observed where turning movements were poorly channelised.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Microsimulation of crowding after station redesign. Alternative concourse layouts were evaluated before construction. Methodologically, a pedestrian simulation was calibrated with generic speed-density relationships and forecast passenger demand. Queue lengths and transfer times were compared across designs. The preferred layout reduced predicted transfer times and queue spillback under the highest demand scenario.",
@@ -433,7 +433,7 @@
   },
   {
     "text": "Bluetooth-assisted calibration of pedestrian counts on festival streets. Temporary events alter pedestrian volumes and device-carrying patterns, complicating passive wireless counting. Methodologically, bluetooth detections were collected alongside thermal-camera counts at gateways during ordinary days and a week-long festival. Time-varying calibration factors were estimated by hour and crowd composition. A fixed conversion factor substantially underestimated family-oriented periods, whereas adaptive calibration reproduced observed event peaks.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Street imagery and retail sales forecasting for commercial corridors. Panoramic images were processed to extract storefront visibility, signage density, facade condition and apparent pedestrian presence, then combined with anonymised transaction totals in gradient-boosting models. Visual indicators improved prediction for restaurants and convenience stores. The target was commercial performance, and the study did not evaluate whether the streets were accessible, comfortable or otherwise walkable.",
@@ -441,7 +441,7 @@
   },
   {
     "text": "Privacy-preserving edge cameras for directional footfall monitoring. Continuous pedestrian counts can inform maintenance and public-space management while avoiding storage of identifiable imagery. Edge devices converted video frames directly into anonymous tracks and directional counts at neighbourhood centres, discarding images after processing. Counts were compared with manual observations under different lighting and crowding conditions. Accuracy remained stable except during heavy umbrella use, and the system revealed distinct through-movement and local stopping patterns.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Automated facade damage detection for post-storm insurance inspection. Vehicle-mounted cameras captured building exteriors after a severe wind event, and a detection network identified broken glazing, detached cladding and roof-edge damage. Claims inspectors verified a sample of alerts, and the system accelerated triage of affected properties. Images were collected from streets, but the measured objects concerned building damage rather than pedestrian conditions.",
@@ -449,7 +449,7 @@
   },
   {
     "text": "Wi-Fi sensing of dwell and through-movement in pedestrian plazas. An array of synchronised Wi-Fi receivers estimated anonymous device trajectories across plaza zones, with camera observations used only for aggregate calibration. A single occupancy total does not distinguish people passing through from those using a public space. Trajectory duration and spatial persistence separated dwell from passage. Seating additions increased dwell without materially changing through-flow, a change that conventional gate counts would have missed.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Computer vision inventory of tobacco branding around schools. Researchers processed geotagged street photographs to detect shop signs, branded displays and promotional colours within walking distance of secondary schools. Automated counts were compared with manual coding and linked to neighbourhood deprivation. Branding exposure was higher near major commercial roads. The imagery served a public-health marketing study rather than measurement of walkability dimensions.",
@@ -457,7 +457,7 @@
   },
   {
     "text": "Computer vision measurement of pedestrian platooning at narrow bottlenecks. Narrow sections can cause pedestrians to reorganise into single-file groups long before density reaches crowding thresholds. To address this, overhead cameras tracked individual paths through temporary and permanent constrictions, deriving lateral spacing, overtaking and platoon length. The automated measures were verified on manually annotated intervals. Single-file organisation emerged at wider effective widths than assumed in standard level-of-service guidance when opposing flows were balanced.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Vehicle imagery for municipal litter-cleansing schedules. Service vehicles collected images to identify litter, overflowing bins and illegal dumping. To address this, a detection model produced route-level waste maps that were used to reorganise cleansing rounds. Performance was compared with complaint records. The resulting waste maps supported revised cleansing schedules and reduced repeat complaints in pilot districts.",
@@ -465,7 +465,7 @@
   },
   {
     "text": "Thermal counters for seasonal use of riverside walking paths. Understanding when paths are used supports interpretation of environmental measurements and investment outcomes. In the reported study, battery-powered thermal counters recorded direction and volume at multiple entrances for eighteen months, with periodic manual calibration and weather linkage. Use responded more strongly to wind exposure than temperature, and sheltered segments retained activity during otherwise unfavourable days. Counts were cleaned for group occlusion and maintenance interruptions.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Roadside camera estimation of vehicle emissions at signalised junctions. Video analytics classified vehicle type, queue length and acceleration events, and these outputs were entered into an emissions model to estimate hourly nitrogen oxide and carbon dioxide production. Estimates were checked against short roadside sampling campaigns. The project focused on traffic emissions management and did not characterise pedestrian exposure or walking-environment quality.",
@@ -473,7 +473,7 @@
   },
   {
     "text": "Vision-based observation of mobility-aid users on redesigned crossings. Fixed cameras recorded crossing trajectories before and after kerb and signal modifications, and a classifier identified broad mobility-aid categories without retaining facial information. Manual review assessed classification and trajectory accuracy. Infrastructure effects may differ for pedestrians using canes, walkers or wheelchairs. The redesign reduced path deviation and incomplete crossings most strongly among walker users, despite little change in aggregate pedestrian volume.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Image-based urban tree disease surveillance. A classifier detected crown dieback, discolouration and trunk lesions and prioritised arborist inspections. Field diagnosis verified selected alerts. A citywide programme used street images to identify symptoms of tree disease. The classifier identified early crown decline and reduced the number of trees requiring immediate field inspection.",
@@ -481,7 +481,7 @@
   },
   {
     "text": "Passive infrared monitoring of footway occupancy beside school entrances. Short, intense occupancy peaks can create accessibility problems even where daily pedestrian totals are modest. Methodologically, passive infrared arrays and time-of-flight sensors monitored usable footway zones during arrival and dismissal periods at twelve schools. Synchronous video samples calibrated occupancy estimates and distinguished adults from clustered groups only at aggregate level. Critical crowding was driven by waiting caregivers and occurred mainly where parked vehicles constrained the available edge space.",
-    "label": "Sensing of walkability dimension"
+    "label": "Not related"
   },
   {
     "text": "Acoustic sensors for urban bird diversity in parks. Autonomous recorders monitored bird communities across parks during the breeding season. Methodologically, species calls were classified and related to habitat structure and surrounding development. The outcome was biodiversity. Species richness was highest in larger parks with complex vegetation structure and lower surrounding built density.",
@@ -597,6 +597,6 @@
   },
   {
     "text": "Network-based walkability score from open spatial data. Intersection density, destination access, residential density and slope from a digital elevation model were standardised and weighted. Scores were compared with an existing index. A new index estimated walkability at road-network nodes rather than administrative areas. The method relied on conventional geospatial datasets and did not sense street-level pedestrian conditions.",
-    "label": "Not related"
+    "label": "Sensing of walkability dimension"
   }
 ]

@@ -39,9 +39,8 @@
         "Street Lighting",
         "Natural Surveillance",
         "Sight Lines and Visibility",
-        "Crime and Personal Security",
-        "Perceived Safety",
-        "Pedestrian Crash Exposure"
+        "Physical Disorder and Incivilities",
+        "Security Infrastructure"
     ],
     "Comfort": [
         "Street Furniture",
@@ -59,7 +58,6 @@
     ],
     "Pleasurability": [
         "Streetscape Aesthetics",
-        "Visual Quality",
         "Building Facade Quality",
         "Facade Transparency",
         "Active Frontages",
