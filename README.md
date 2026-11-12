@@ -1,10 +1,10 @@
-# Sensor-Based Walkability Assessment in Smart Cities
+# Visual Observation of Soft Mobility
 
-This repository contains the data-processing and analysis workflow for a systematic review of how sensing technologies are used to assess walkability and the pedestrian environment. The workflow retrieves and enriches bibliographic records, screens studies for eligibility, and produces descriptive and thematic analyses of the included literature.
+Understanding the aspects of soft mobility is important for assisting, protecting, and planning for pedestrians, cyclists, and scooter users. Advances in learning-based visual sensing are expanding the use of these technologies to observe and monitor soft-mobility users and their environments.
 
-## Project overview
+This repository contains the data-processing and analysis workflow for a survey of visual monitoring of soft mobility over the last decade. The study examines trends in the bibliography through semantic analysis and classifies the included literature by vision methodologies, reported monitoring setups, observed areas, and whether or how privacy is considered. It also discusses key challenges and aims to support informed research and development in urban mobility.
 
-The review focuses on studies that use sensor data to assess walkability-related dimensions or the movement and safety of pedestrians, cyclists, and other soft-mobility users. The analysis combines bibliographic data processing, LLM-assisted screening with a manually labeled hold-out set, corpus descriptives, term-based analysis, and research-question extraction.
+The analysis workflow combines bibliographic data processing, LLM-assisted screening with a manually labeled hold-out set, corpus descriptives, term-based analysis, and structured research-question extraction.
 
 ## Analysis workflow
 
@@ -13,8 +13,8 @@ The current notebooks in `notebooks/` are intended to be run in this order:
 1. `01-Scopus_Data_Extraction.ipynb` — retrieve bibliographic records from Scopus.
 2. `02-Extract_Scopus_Data.ipynb` — clean and structure the retrieved records.
 3. `03-Extract_Intro_and_Contribution.ipynb` — add introduction and contribution text where available.
-4. `04_LLM_Screening.ipynb` — screen records against the review criteria, use the manually labeled hold-out for validation, and produce the screened corpus.
-5. `05_Corpus_Descriptives.ipynb` — summarize the screened corpus, including its publication, keyword, and geographic distributions.
+4. `04_LLM_Screening.ipynb` — screen records against the visual-monitoring eligibility criteria, validate against the manually labeled hold-out, and produce the screened corpus.
+5. `05_Corpus_Descriptives.ipynb` — summarize the screened corpus, including publication, keyword, and geographic distributions.
 6. `06_Term_Metrics.ipynb` — calculate and review term-based metrics for the screened corpus.
 7. `07_RQ_Extraction.ipynb` — extract structured information for the review research questions and create records for manual review.
 
@@ -41,7 +41,7 @@ Some files are intermediate outputs, local caches, or historical experiments rat
 
 ## Article
 
-**TODO:** Add the final article citation, publication status, and DOI or URL when available.
+**TODO:** Add the final article title, author list, publication status, citation, and DOI or URL when available.
 
 ## Data and access
 
