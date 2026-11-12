@@ -1,3 +1,5 @@
+![Laboratory banner](./figures/les2banner.png)
+
 # Visual Observation of Soft Mobility
 
 Understanding the aspects of soft mobility is important for assisting, protecting, and planning for pedestrians, cyclists, and scooter users. Advances in learning-based visual sensing are expanding the use of these technologies to observe and monitor soft-mobility users and their environments.
