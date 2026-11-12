@@ -1,0 +1,21 @@
+record_key,title,year,camera_data_role,evidence
+doi:10.1007/s13177-024-00458-5,Simulation of Pedestrian Behaviour in Traffic Situations Using Risk-Based A* Pathfinding,2025,no_camera_data,
+doi:10.54941/ahfe1005447,In-Depth Analysis Based on the Phenomenon of Pedestrians Entering the Scene When Tourists Take Photos: Designing Interactive Reminder Device,2024,no_camera_data,
+doi:10.1007/s41748-025-01003-4,Seismometer-Based Pedestrian Monitoring Using Spectral Feature Extraction and Deep Learning: A Privacy-Preserving Approach for Urban Mobility,2026,secondary_or_validation,a camera providing ground-truth validation for all measurements
+doi:10.1080/23249935.2024.2350645,Roles of physical collision forces and walking characteristics on pedestrian traffic flow status,2026,secondary_or_validation,"Walking characteristics, including speed and density, were obtained through video processing technologies"
+doi:10.1016/j.apenergy.2024.124282,Assessing air quality and physical risks to E-scooter riders in urban environments through artificial intelligence and a mixed methods approach,2024,secondary_or_validation,detect the existence of cars alongside the pollution readings
+doi:10.1007/s11116-022-10322-8,A LiDAR-based methodology for monitoring and collecting microscopic bicycle flow parameters on bicycle facilities,2024,secondary_or_validation,evaluated by comparing it to ground truth video
+doi:10.1002/rvr2.78,"Development of a hazard risk map for assessing pedestrian risk in urban flash floods: A case study in Cúcuta, Colombia",2024,secondary_or_validation,The PCSWMM ... was calibrated and validated to simulate extreme flood events.
+doi:10.1167/iovs.64.14.26,Gaze Scanning at Street Crossings by Pedestrians With Homonymous Hemianopia With and Without Hemispatial Neglect,2023,secondary_or_validation,Street-crossing instances were manually annotated
+doi:10.1061/jtepbs.0000619,Using Machine Learning to Estimate Pedestrian and Bicyclist Count of Intersection by Bluetooth Low Energy,2022,secondary_or_validation,validated by the benchmark count data from video footage
+doi:10.1177/03611981211036681,Effect of Various Speed Management Strategies on Bicycle Crashes for Urban Roads in Central Florida,2022,secondary_or_validation,adjustments were made ... based on the video detection data
+doi:10.1007/978-3-030-32150-5_88,Pedwarn-Enhancement of Pedestrian Safety Using Mobile Application,2020,secondary_or_validation,accuracy is also strengthened by using the visual detector
+doi:10.1080/19439962.2017.1333181,Determination if VISSIM and SSAM could estimate pedestrian-vehicle conflicts at signalized intersections,2018,secondary_or_validation,The observed conflicts from the field were used to calibrate VISSIM and replicate the conflicts.
+doi:10.1016/j.aap.2024.107850,A discrete choice latent class method for capturing unobserved heterogeneity in cyclist crossing behaviour at crosswalks,2025,unclear,
+doi:10.1145/3652920.3653056,E-Scooter Dynamics: Unveiling Rider Behaviours and Interactions with Road Users through Multi-Modal Data Analysis,2024,unclear,
+doi:10.1007/978-3-031-60419-5_5,Modeling Cyclists Behavior at a Roundabout Approach,2024,unclear,The trajectories dataset used in this model
+doi:10.3390/s23052773,Pedestrian Crossing Intention Forecasting at Unsignalized Intersections Using Naturalistic Trajectories,2023,unclear,
+doi:10.1109/access.2023.3235863,"A Sensing, Communication and Computing Approach for Vulnerable Road Users Safety",2023,unclear,leverages and aggregates information from smart city sensors
+doi:10.1109/itsc48978.2021.9564915,"Prediction of Human Intention in Vehicles, Pedestrians and Bicyclists Interactions",2021,unclear,
+doi:10.1016/j.aap.2021.106294,Vulnerable road users’ crash hotspot identification on multi-lane arterial roads using estimated exposure and considering context classification,2021,unclear,
+doi:10.1109/coniiti53815.2021.9619755,Evaluation of a bicycle lane as a sustainable means of transport in cities with an excessive presence of motorcycle taxis,2021,unclear,

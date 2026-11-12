@@ -1,41 +1,48 @@
-![Figure 1](./figures/les2banner.png)
-
 # Sensor-Based Walkability Assessment in Smart Cities
 
-This study explores how sensing technologies are used to assess walkability within the context of smart cities, examining the dimensions of the pedestrian environment measured by different sensor modalities. It provides a systematic perspective on the relationship between walkability dimensions and sensing technologies in urban contexts.
+This repository contains the data-processing and analysis workflow for a systematic review of how sensing technologies are used to assess walkability and the pedestrian environment. The workflow retrieves and enriches bibliographic records, screens studies for eligibility, and produces descriptive and thematic analyses of the included literature.
 
-We developed a reproducible framework grounded in peer-reviewed literature and a systematic Natural Language Processing (NLP) analytical approach. The framework is designed to facilitate the identification of sensor-based walkability studies, classify walkability dimensions and sensing technologies, and analyze their co-occurrence in the literature.
+## Project overview
 
----
+The review focuses on studies that use sensor data to assess walkability-related dimensions or the movement and safety of pedestrians, cyclists, and other soft-mobility users. The analysis combines bibliographic data processing, LLM-assisted screening with a manually labeled hold-out set, corpus descriptives, term-based analysis, and research-question extraction.
 
-## Key Features
+## Analysis workflow
 
--   **Systematic Review:** NLP-based analysis of peer-reviewed articles retrieved from Scopus.
--   **Domain-Specific Insights:** A taxonomy of walkability dimensions and sensing technologies.
--   **Reproducible Analysis:** Code and data are structured for reuse and verification.
+The current notebooks in `notebooks/` are intended to be run in this order:
 
----
+1. `01-Scopus_Data_Extraction.ipynb` — retrieve bibliographic records from Scopus.
+2. `02-Extract_Scopus_Data.ipynb` — clean and structure the retrieved records.
+3. `03-Extract_Intro_and_Contribution.ipynb` — add introduction and contribution text where available.
+4. `04_LLM_Screening.ipynb` — screen records against the review criteria, use the manually labeled hold-out for validation, and produce the screened corpus.
+5. `05_Corpus_Descriptives.ipynb` — summarize the screened corpus, including its publication, keyword, and geographic distributions.
+6. `06_Term_Metrics.ipynb` — calculate and review term-based metrics for the screened corpus.
+7. `07_RQ_Extraction.ipynb` — extract structured information for the review research questions and create records for manual review.
 
-## Article Information
+Some notebooks require access credentials for Scopus or an LLM provider. Configure credentials locally, using environment variables or a local configuration file, and never commit API keys, passwords, or other secrets.
 
-This repository is a fork of the original [genai-smartcity project](https://github.com/les2feup/genai-smartcity), adapting its reproducible NLP framework to the analysis of sensing technologies for walkability assessment. The original project is associated with the following paper:
+## Getting started
 
-> Bittencourt, J. C. N., Flores, T. K. S., Jesus, T. C., & Costa, D. G. (2025). On the Role of AI in Building Generative Urban Intelligence. In Review. <https://doi.org/10.21203/rs.3.rs-7131966/v1>
+1. Install Python and Jupyter Notebook or JupyterLab.
+2. Install the dependencies listed in `notebooks/requirements.txt` from the repository root.
+3. Configure any required API credentials locally.
+4. Open the notebooks and run them in workflow order. Many notebooks use paths relative to `notebooks/`, so run them from that directory or keep the configured working directory consistent.
 
-## Repository Structure
+The LLM screening notebook can reuse saved inference results when available. For a new corpus or changed prompt, verify the input paths and screening configuration before running it. The hold-out labels are for evaluation; do not use test-set results to tune prompts or screening rules if reporting them as final test metrics.
 
-```plaintext
-.
-├── README.md                # Project overview and instructions
-├── data/                    # Datasets and configuration files used in the study
-├── figures/                 # Figures used in the repository
-├── model/                   # Model evaluation and training notebooks
-├── notebooks/               # Jupyter notebooks for the analysis
-└── results/                 # Output files and analysis results
-```
+## Repository structure
 
-## Dataset & Model
+- `data/` — bibliographic inputs, processed records, screening outputs, caches, and analysis results.
+- `figures/` — project figures and generated visualizations.
+- `model/` — model experiments, training materials, and labeled datasets used during development.
+- `notebooks/` — the current analysis workflow, supporting files, and archived notebooks.
+- `results/` — exported analysis tables.
 
--   The datasets generated and used in this study are available in the `data/` directory.
+Some files are intermediate outputs, local caches, or historical experiments rather than required inputs for every workflow. Check each notebook's configuration and output paths before reusing or removing data.
 
--   The model datasets and notebooks used for screening and validation are available in the `model/` directory.
+## Article
+
+**TODO:** Add the final article citation, publication status, and DOI or URL when available.
+
+## Data and access
+
+Bibliographic metadata and analysis outputs are provided for research and reproducibility. Access to source databases, full-text articles, and third-party datasets may be subject to their own terms and copyright restrictions. Verify the applicable permissions before sharing or redistributing those materials.

@@ -11,6 +11,8 @@ simplejson
 seaborn
 networkx
 wordcloud
+stylecloud
+setuptools<81
 torch
 transformers
 tqdm 

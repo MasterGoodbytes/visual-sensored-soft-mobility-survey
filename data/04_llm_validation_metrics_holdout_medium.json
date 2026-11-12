@@ -1,0 +1,134 @@
+{
+  "run_on": "holdout_validation",
+  "reasoning_effort": "medium",
+  "evaluate_test": true,
+  "decision_rule": "veto: 0 'no' answers and at most 1 'unclear' answer across six questions",
+  "prompt_version": "908809cd0c",
+  "system_prompt": "You are a researcher screening titles and abstracts of scientific papers for a survey on how visual sensing technologies and computer vision methods are used for monitoring soft mobility (pedestrians, cyclists including e-bikes, and scooter users including e-scooters).\n\nAnswer each question about the paper using only the title and abstract. Base each answer on what the abstract actually states, not on what is typical for the topic. For each question answer:\n- \"yes\" if the abstract supports that the criterion is met,\n- \"no\" if the abstract indicates it is not met,\n- \"unclear\" if the abstract does not give enough information to decide.\nFollow any question-specific instruction about when to answer \"yes\", \"no\" or \"unclear\".\n\nQuestions:\nQ1. Are the images or videos processed with computer vision or other automated image analysis (e.g., detection, tracking, segmentation, automated trajectory extraction)? Answer \"yes\" only if the abstract states or clearly implies automated analysis; answer \"no\" if the footage is only watched, coded or annotated manually, and \"unclear\" if the abstract does not say how the footage was analysed.\nQ2. Is the study primarily concerned with the safety, behaviour or movement of pedestrians, cyclists (including e-bikes) or scooter users (including e-scooters)? Answer \"no\" if the focus is on drivers, motorcyclists, autonomous or automated vehicles, driver-assistance systems, robots or personal mobility vehicles, or if the main purpose is to warn drivers or support driving using a vehicle-mounted camera (e.g., a dash-cam), even if pedestrians or cyclists appear in the data.\nQ3. Does the study use the visual data to draw conclusions about a specific real-world space used for walking, cycling or scooter riding (e.g., a street, crossing, intersection, lane, sidewalk or station), either its physical environment or how people move through it (e.g., counts, flows, speeds, crossing behaviour, conflicts), or to detect obstacles and hazards along the route of a pedestrian or rider (e.g., assistive navigation)? Answer \"no\" if the contribution is only an algorithm evaluated on benchmark datasets, a simulation, a structural or engineering test, positioning or signal-reception research (e.g., GNSS), or security, crime or public-health surveillance (e.g., anomaly detection, social distancing).\nQ4. Were the images or videos recorded in real-world locations by cameras deployed there (fixed, bicycle- or rider-mounted, wearable, or drone-based), including existing CCTV or traffic cameras, field video and public datasets recorded this way, rather than taken from existing image collections such as Google Street View, satellite imagery or social media photos? Answer \"yes\" if the abstract mentions field, CCTV, traffic-camera, drone or on-site video or footage from real locations, even without describing the camera setup; answer \"unclear\" only if it gives no indication of where the visual data come from.\nQ5. Do the visual data include conventional visible-light camera images or video? Answer \"yes\" unless the abstract states that only thermal/infrared cameras, LiDAR/laser scanning or non-camera sensors were used; the abstract does not need to mention RGB explicitly.\nQ6. Are the images or videos analysed as data about the space or its users, rather than only shown to participants as stimuli (e.g., in virtual reality, video-based questionnaires, eye-tracking or crossing-decision experiments)?\n\nRespond with ONLY a JSON object, no other text, in exactly this form:\n{\"Q1\": {\"answer\": \"yes|no|unclear\", \"evidence\": \"<one short sentence citing the abstract>\"}, \"Q2\": {...}, \"Q3\": {...}, \"Q4\": {...}, \"Q5\": {...}, \"Q6\": {...}}",
+  "questions": {
+    "Q1": "Are the images or videos processed with computer vision or other automated image analysis (e.g., detection, tracking, segmentation, automated trajectory extraction)? Answer \"yes\" only if the abstract states or clearly implies automated analysis; answer \"no\" if the footage is only watched, coded or annotated manually, and \"unclear\" if the abstract does not say how the footage was analysed.",
+    "Q2": "Is the study primarily concerned with the safety, behaviour or movement of pedestrians, cyclists (including e-bikes) or scooter users (including e-scooters)? Answer \"no\" if the focus is on drivers, motorcyclists, autonomous or automated vehicles, driver-assistance systems, robots or personal mobility vehicles, or if the main purpose is to warn drivers or support driving using a vehicle-mounted camera (e.g., a dash-cam), even if pedestrians or cyclists appear in the data.",
+    "Q3": "Does the study use the visual data to draw conclusions about a specific real-world space used for walking, cycling or scooter riding (e.g., a street, crossing, intersection, lane, sidewalk or station), either its physical environment or how people move through it (e.g., counts, flows, speeds, crossing behaviour, conflicts), or to detect obstacles and hazards along the route of a pedestrian or rider (e.g., assistive navigation)? Answer \"no\" if the contribution is only an algorithm evaluated on benchmark datasets, a simulation, a structural or engineering test, positioning or signal-reception research (e.g., GNSS), or security, crime or public-health surveillance (e.g., anomaly detection, social distancing).",
+    "Q4": "Were the images or videos recorded in real-world locations by cameras deployed there (fixed, bicycle- or rider-mounted, wearable, or drone-based), including existing CCTV or traffic cameras, field video and public datasets recorded this way, rather than taken from existing image collections such as Google Street View, satellite imagery or social media photos? Answer \"yes\" if the abstract mentions field, CCTV, traffic-camera, drone or on-site video or footage from real locations, even without describing the camera setup; answer \"unclear\" only if it gives no indication of where the visual data come from.",
+    "Q5": "Do the visual data include conventional visible-light camera images or video? Answer \"yes\" unless the abstract states that only thermal/infrared cameras, LiDAR/laser scanning or non-camera sensors were used; the abstract does not need to mention RGB explicitly.",
+    "Q6": "Are the images or videos analysed as data about the space or its users, rather than only shown to participants as stimuli (e.g., in virtual reality, video-based questionnaires, eye-tracking or crossing-decision experiments)?"
+  },
+  "criteria_paragraph": "Studies that monitor soft mobility (pedestrians, cyclists and scooter users) with cameras deployed in the real environment (fixed, mobile, wearable or drone cameras, including CCTV and traffic cameras), using computer vision on images or video to assess the physical environment of specific streets, crossings, lanes or stations, or how people move through them.",
+  "models": [
+    {
+      "name": "gpt-6-luna",
+      "model": "gpt-6-luna",
+      "reasoning_effort": "medium",
+      "price_in": 0.1,
+      "price_out": 0.5
+    }
+  ],
+  "alpha": 0.5,
+  "beta": 0.5,
+  "evaluation": {
+    "veto_pass": {
+      "dev": {
+        "selected": 34,
+        "n": 50,
+        "recall": 1.0,
+        "precision": 0.7352941176470589,
+        "f1": 0.8474576271186441,
+        "excluded": 0.32,
+        "tn": 16,
+        "fp": 9,
+        "fn": 0,
+        "tp": 25
+      },
+      "test": {
+        "selected": 28,
+        "n": 50,
+        "recall": 1.0,
+        "precision": 0.7142857142857143,
+        "f1": 0.8333333333333333,
+        "excluded": 0.44,
+        "tn": 22,
+        "fp": 8,
+        "fn": 0,
+        "tp": 20,
+        "recall_ci": [
+          0.8315665290169146,
+          1.0
+        ],
+        "precision_ci": [
+          0.5133316845510592,
+          0.8677634874288749
+        ]
+      }
+    },
+    "llm_mean": {
+      "threshold": 0.9166666667,
+      "dev": {
+        "selected": 34,
+        "n": 50,
+        "recall": 1.0,
+        "precision": 0.7352941176470589,
+        "f1": 0.8474576271186441,
+        "excluded": 0.32,
+        "tn": 16,
+        "fp": 9,
+        "fn": 0,
+        "tp": 25
+      },
+      "test": {
+        "selected": 28,
+        "n": 50,
+        "recall": 1.0,
+        "precision": 0.7142857142857143,
+        "f1": 0.8333333333333333,
+        "excluded": 0.44,
+        "tn": 22,
+        "fp": 8,
+        "fn": 0,
+        "tp": 20,
+        "recall_ci": [
+          0.8315665290169146,
+          1.0
+        ],
+        "precision_ci": [
+          0.5133316845510592,
+          0.8677634874288749
+        ]
+      }
+    },
+    "llm_rerank": {
+      "threshold": 0.5055843592,
+      "dev": {
+        "selected": 36,
+        "n": 50,
+        "recall": 0.96,
+        "precision": 0.6666666666666666,
+        "f1": 0.7868852459016393,
+        "excluded": 0.28,
+        "tn": 13,
+        "fp": 12,
+        "fn": 1,
+        "tp": 24
+      },
+      "test": {
+        "selected": 30,
+        "n": 50,
+        "recall": 0.95,
+        "precision": 0.6333333333333333,
+        "f1": 0.7599999999999999,
+        "excluded": 0.4,
+        "tn": 19,
+        "fp": 11,
+        "fn": 1,
+        "tp": 19,
+        "recall_ci": [
+          0.7512672372279722,
+          0.9987349105020502
+        ],
+        "precision_ci": [
+          0.43855984901195755,
+          0.8007013749879655
+        ]
+      }
+    }
+  }
+}

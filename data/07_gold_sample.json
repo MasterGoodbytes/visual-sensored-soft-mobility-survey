@@ -1,0 +1,990 @@
+{
+  "allowed_values": {
+    "sensor_platforms": [
+      "fixed_infrastructure_camera",
+      "drone_uav",
+      "vehicle_mounted",
+      "bicycle_or_rider_mounted",
+      "wearable_body_worn",
+      "smartphone",
+      "camera_unspecified",
+      "other",
+      "not_reported"
+    ],
+    "camera_source": [
+      "existing_infrastructure",
+      "deployed_for_study",
+      "public_dataset",
+      "mixed",
+      "not_reported"
+    ],
+    "camera_data_role": [
+      "main_data",
+      "secondary_or_validation",
+      "no_camera_data",
+      "unclear"
+    ],
+    "method_families": [
+      "yolo",
+      "rcnn_ssd_detr",
+      "other_cnn",
+      "transformer",
+      "multi_object_tracking",
+      "segmentation",
+      "pose_estimation",
+      "trajectory_prediction",
+      "classical_cv",
+      "llm_vlm",
+      "cv_unspecified",
+      "other",
+      "not_reported"
+    ],
+    "cv_tasks": [
+      "detection",
+      "tracking",
+      "counting",
+      "trajectory_extraction",
+      "classification_recognition",
+      "segmentation",
+      "pose_estimation",
+      "behaviour_or_intention_prediction",
+      "conflict_event_detection",
+      "anomaly_detection",
+      "measurement_speed_distance",
+      "other",
+      "not_reported"
+    ],
+    "analysis_methods": [
+      "descriptive_statistics",
+      "statistical_model",
+      "machine_learning_model",
+      "surrogate_safety_indicators",
+      "simulation_or_game_theory",
+      "spatial_gis_analysis",
+      "other",
+      "not_reported"
+    ],
+    "road_users": [
+      "pedestrians",
+      "cyclists",
+      "scooter_micromobility",
+      "pedestrians_and_cyclists",
+      "mixed_vulnerable_road_users",
+      "other"
+    ],
+    "privacy": [
+      "addressed",
+      "mentioned_only",
+      "not_mentioned"
+    ]
+  },
+  "records": [
+    {
+      "record_key": "doi:10.3390/e22080832",
+      "title": "Fuzzy evaluation of crowd safety based on pedestrians' number and distribution entropy",
+      "abstract": "Crowd video monitoring and analysis is a hot topic in computer vision and public management. The pre-evaluation of crowd safety is beneficial to the prediction of crowd status to avoid the occurrence of catastrophic events. This paper proposes a method to evaluate crowd safety based on fuzzy inference. Pedestrian's number and distribution uniformity are considered in a fuzzy inference system as two kinds of attributes of a crowd. Firstly, the pedestrian's number is estimated by the number of foreground pixels. Then, the distribution uniformity of a crowd is calculated using distribution entropy by dividing the monitoring scene into several small areas. Furthermore, through the fuzzy operation, the fuzzy system is constructed by using two input variables (pedestrian's number and distribution entropy) and one output variable (crowd safety status). Finally, inference rules between the crowd safety state and the pedestrian's number and distribution uniformity are constructed to obtain the pre-evaluation of the safety state of the crowd. Three video sequences extracted from different scenes are used in the experiment. Experimental results show that the proposed method can be used to evaluate the safety status of the crowd in a monitoring scene.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "classical_cv"
+      ],
+      "cv_tasks": [
+        "counting",
+        "other"
+      ],
+      "analysis_methods": [
+        "other"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.aap.2016.07.033",
+      "title": "Investigating the gender differences on bicycle-vehicle conflicts at urban intersections using an ordered logit methodology",
+      "abstract": "In the literature, a crash-based modeling approach has long been used to evaluate the factors that contribute to cyclist injury risk at intersections. However, this approach has been criticized as crashes are required to occur before contributing factors can be identified and countermeasures can be implemented. Moreover, human factors related to dangerous behaviors are difficult to evaluate using crash-based methods. As an alternative, surrogate safety measures have been developed to address the issue of reliance on crash data. Despite recent developments, few methodologies and little empirical evidence exist on bicycle-vehicle interactions at intersections using video-based data and statistical analyses to identify associated factors. This study investigates bicycle-vehicle conflict severity and evaluates the impact of different factors, including gender, on cyclist risk at urban intersections with cycle tracks. A segmented ordered logit model is used to evaluate post-encroachment time between cyclists and vehicles. Video data was collected at seven intersections in Montreal, Canada. Road user trajectories were automatically extracted, classified, and filtered using a computer vision software to yield 1514 interactions. The discrete choice variable was generated by dividing post-encroachment time into normal interactions, conflicts, and dangerous conflicts. Independent variables reflecting attributes of the cyclist, vehicle, and environment were extracted either automatically or manually. Results indicated that an ordered model is appropriate for analyzing traffic conflicts and identifying key factors. Furthermore, exogenous segmentation was beneficial in comparing different segments of the population within a single model. Male cyclists, with all else being equal, were less likely than female cyclists to be involved in conflicts and dangerous conflicts at the studied intersections. Bicycle and vehicle speed, along with the time of the conflict relative to the red light phase, were other significant factors in conflict severity. These results will contribute to and further the understanding of gender differences in cycling within North America.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "trajectory_extraction",
+        "classification_recognition",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "statistical_model",
+        "surrogate_safety_indicators"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.5269/bspm.80218",
+      "title": "Development of Pedestrian Safety Index Model at Un-Signalized Intersection",
+      "abstract": "Pedestrian safety has become a critical issue in developing countries where rapid urbanization and motorization have outpaced the development of pedestrian-friendly infrastructure. Inadequate crossings, limited enforcement, and insufficient pedestrian facilities have increased the frequency of pedestrian–vehicle conflicts, particularly at unsignalized urban intersections. This study focuses on developing a Pedestrian Safety Index (PSI) to quantify pedestrian safety levels by considering human, environmental, and traffic-related parameters. Data were collected through videography over three-hour observation periods, covering the movement of 2,356 pedestrians. Variables such as age, gender, crossing speed, mobile phone usage, vehicle and pedestrian volumes, police presence, road width, number of lanes, and sidewalk conditions were analyzed. Using Multiple Linear Regression (MLR), the model achieved an R² value of 0.753, indicating that 75.3 percentage of the variation in pedestrian safety could be explained by the selected parameters. To further enhance predictive accuracy, an Artificial Neural Network (ANN) model was developed, producing Sum of Squares Error (SSE) values of 447.64 (training) and 221.53 (testing), and relative error values close to unity, demonstrating high model reliability and generalization. The study concludes that pedestrian safety is significantly influenced by both behavioral and roadway factors. Integrating these parameters through statistical and machine learning models offers a reliable framework for assessing and improving pedestrian safety. The developed PSI serves as a valuable decision-support tool for urban planners and traffic engineers to design safer, more inclusive intersections and to prioritize safety interventions in rapidly developing urban environments.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "counting",
+        "measurement_speed_distance",
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "statistical_model",
+        "machine_learning_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/tencon61640.2024.10902955",
+      "title": "Pedestrian Tracking Using YOLOv8 with Lucas-Kanade Optical Flow for Traffic Light Control Application",
+      "abstract": "A robust pedestrian tracking system using YOLOv8 for detection and Lucas-Kanade optical flow for motion tracking under varying lighting conditions is developed. Pedestrian tracking is essential for surveillance, robotics, and autonomous vehicles, requiring accurate detection in dynamic environments. A Raspberry Pi camera is employed for real-time processing, and the system's performance is evaluated in artificial and real-world lighting scenarios. Results show a chi-square statistic value - 0.081, significantly lesser than the critical value of 5.991. Results suggests - no significant association exists between the lighting conditions. The results demonstrate effective pedestrian tracking capabilities, highlighting the system's potential to enhance pedestrian safety and traffic management. A significant challenge to be addressed is mitigating human occlusion, which is a primary problem for tracking accuracy in crowded or obstructed environments. Future research should focus on advanced techniques to minimize occlusion effects, ensuring reliable performance across diverse real-world conditions and validating their practical applicability.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "yolo",
+        "classical_cv"
+      ],
+      "cv_tasks": [
+        "detection",
+        "tracking"
+      ],
+      "analysis_methods": [
+        "statistical_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/s23052773",
+      "title": "Pedestrian Crossing Intention Forecasting at Unsignalized Intersections Using Naturalistic Trajectories",
+      "abstract": "Interacting with other roads users is a challenge for an autonomous vehicle, particularly in urban areas. Existing vehicle systems behave in a reactive manner, warning the driver or applying the brakes when the pedestrian is already in front of the vehicle. The ability to anticipate a pedestrian’s crossing intention ahead of time will result in safer roads and smoother vehicle maneuvers. The problem of crossing intent forecasting at intersections is formulated in this paper as a classification task. A model that predicts pedestrian crossing behaviour at different locations around an urban intersection is proposed. The model not only provides a classification label (e.g., crossing, not-crossing), but a quantitative confidence level (i.e., probability). The training and evaluation are carried out using naturalistic trajectories provided by a publicly available dataset recorded from a drone. Results show that the model is able to predict crossing intention within a 3-s time window.",
+      "sensor_platforms": [
+        "drone_uav"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "not_reported"
+      ],
+      "analysis_methods": [
+        "machine_learning_model"
+      ],
+      "camera_source": "public_dataset",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1155/2022/5516707",
+      "title": "Analysis of Pedestrian Lane Change Behavior Spectrum Based on Video Data at Ticket Gate Facilities in Subway Stations",
+      "abstract": "Using motion unit tracking technology, the pedestrian motion parameters were extracted from the monitoring video data at the ticket gate facilities in subway stations and the indicators of the lane change behavior were determined. The pedestrian lane change behavior spectrum of ticket gate facilities in subway stations was constructed from the three elements of types of ticket gate facilities, pedestrian flow, and lane change behavior, and the quartile method was used to determine the upper and lower thresholds of the indicators. The results showed that when the pedestrian flow was (5, 10] ped/min, the average values of displacement, distance, and cumulative side shift distance were the largest and the thresholds were the largest. When the pedestrian flow was (10, 15] ped/min, pedestrians generally adopted a faster walking speed to change lanes. With the increase of the pedestrian flow, the average value of the change in direction of the movement increased and the longitudinal distance at the gate-type ticket gate facilities was greatly affected by the pedestrian flow. The number of lane changes was generally once. The research results can provide a basis for scientifically setting up ticket gate facilities and reducing congestion risks caused by abnormal lane change behavior.",
+      "sensor_platforms": [
+        "fixed_infrastructure_camera"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "tracking",
+        "trajectory_extraction",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "descriptive_statistics"
+      ],
+      "camera_source": "existing_infrastructure",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.aap.2025.108034",
+      "title": "A game theoretical model to examine pedestrian behaviour and safety on unsignalised slip lanes using AI-based video analytics",
+      "abstract": "Left-turn slip lanes, also known as channelised right-turn lanes in right-hand driving countries, are widely implemented to facilitate left-turning at signalised intersections. However, pedestrian safety on slip lanes is not well known. At unsignalised crosswalks, the joint decision-making process of both pedestrians and motorists is complex, involving joint communication dynamics, yet current research primarily focuses on examining individual decisions. This study proposes a game theory-based approach, formulating the interaction as a two-player, non-cooperative, simultaneous game to examine those joint decision-making dynamics, their resulting behaviours, and associated crash risks. The approach compares two well-known equilibriums of game theory, namely Quantal Response Equilibrium (QRE) and Nash Equilibrium (NE), based on real-world pedestrian-motorist interaction video data collected over two days, each day spanning 12 h, from two slip lanes with zebra crossings at signalised intersections in Brisbane, Australia. Artificial intelligence-based video analytics extracted interaction data, which was modelled using binary logit models to understand the crossing and yielding decisions of pedestrians. Results demonstrate that the QRE outperforms the NE in predicting the crossing intention of pedestrians and the yielding intention of motorists. Results indicate that a) motorists are less likely to yield to pedestrians when the vehicle speed is higher, b) pedestrians are more likely to let the motorists go first if they start crossing from the curbside of the road, and c) motorists are more likely to yield to pedestrians when the distance between pedestrians and vehicles is longer. According to the QRE model, the probability of conflict is 5.8%, indicating that 5.8% of pedestrian interactions with vehicles in these slip lanes result in conflicts. Similarly, the confusion probability indicates that about 5.2% of pedestrians were confused about initiating crossing in the presence of zebra crossing even though drivers yielded them on slip lanes at signalised intersections. This study highlights the significance of using game theory-based approaches to understand road users’ behaviour on slip lanes. These findings can help to identify pedestrian crossing intentions and support connected automated vehicles in making stopping decisions to enhance pedestrian safety and reduce potential conflicts with other road users.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "statistical_model",
+        "simulation_or_game_theory"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/ictai50040.2020.00134",
+      "title": "A Multi-Camera Tracker for Monitoring Pedestrians in Enclosed Environments",
+      "abstract": "Multi-camera pedestrians tracking is a challenging computer vision task. We propose a multi-camera tracker for monitoring pedestrians in an enclosed shopping environment. We assess the performance of the multi-camera tracker in a case study, tracking customers in a food and speciality market hall. Our multi-camera tracker tracks customers' walking between the stalls in the market. The information is useful for market management, visitor safety, and other potential application areas.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "multi_object_tracking"
+      ],
+      "cv_tasks": [
+        "tracking"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.trf.2020.02.011",
+      "title": "Surrogate safety indicator for unsignalised pedestrian crossings",
+      "abstract": "Problem: Although the road safety situation in Poland is generally improving, the number of accidents at pedestrian crossings has not decreased in the last four years. This paper presents the results of the MOBIS research project, the aim of which was to develop surrogate safety indicators, based on detection of pedestrian-vehicle conflicts using video analysis. Method: Pedestrian and vehicle traffic was filmed at two unsignalised pedestrian zebra crossings in Warsaw and Wrocław for over 40 days. Motion trajectories of vehicles and pedestrians were determined based on video processing. Several variables describing pedestrian-vehicle interactions were calculated, such as speed, post-encroachment time, distance between the participants, decelerations, etc. Classification of encounters was based on interactions of pedestrians and vehicles i.e. drivers yielding to pedestrians, vehicles passing just in front of, or behind pedestrians. Results and discussion: Criteria for identification of dangerous encounters were selected with the assumption that it should be possible to automate the assessment process. The selected variables were: pedestrian-vehicle passing distance and the vehicle speed at that moment. Other criteria were used in cases of abrupt braking – deceleration exceeding 4 m/s2 and vehicle speed. A Dangerous Encounter Index is proposed as a surrogate safety indicator for pedestrian crossings. It relates the occurrence of dangerous events to exposure, defined as the number of pedestrian-vehicle encounters. Practical applications: The proposed index shows that crossing two lanes involves more risk than crossing one lane, given similar traffic flow. Some improvement of safety at both types of crossing was observed after active signage involving blinking lights had been introduced. The proposed method is a step towards automation of safety assessment.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "trajectory_extraction",
+        "measurement_speed_distance",
+        "conflict_event_detection"
+      ],
+      "analysis_methods": [
+        "surrogate_safety_indicators"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/iccsnt.2015.7490834",
+      "title": "Pedestrian movement monitoring based on face recognition and RFID recognition",
+      "abstract": "In order to achieve object trajectory tracking without blind angle, we propose a pedestrian movement monitoring system with face recognition outdoor and RFID radio frequency equipment indoor, which connect people, object and events. While granting integrated human movement information, we also provide two-dimensional trajectory panoramic map browsing, preview video clips on designated area, video search specified users for object motion trajectory and behavioral abnormalities. The experimental results show that the proposed system method can obtain satisfactory identification result on video test set of China mobile southern base.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "classification_recognition",
+        "tracking",
+        "trajectory_extraction",
+        "anomaly_detection"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/tcsvt.2022.3144184",
+      "title": "Bayesian Gabor Network with Uncertainty Estimation for Pedestrian Lane Detection in Assistive Navigation",
+      "abstract": "Automatic pedestrian lane detection is a challenging problem that is of great interest in assistive navigation and autonomous driving. Such a detection system must cope well with variations in lane surfaces and illumination conditions so that a vision-impaired user can navigate safely in unknown environments. This paper proposes a new lightweight Bayesian Gabor Network (BGN) for camera-based detection of pedestrian lanes in unstructured scenes. In our approach, each Gabor parameter is represented as a learnable Gaussian distribution using variational Bayesian inference. For the safety of vision-impaired users, in addition to an output segmentation map, the network provides two full-resolution maps of aleatoric uncertainty and epistemic uncertainty as well-calibrated confidence measures. Our Gabor-based method has fewer weights than the standard CNNs, therefore it is less prone to overfitting and requires fewer operations to compute. Compared to the state-of-The-Art semantic segmentation methods, the BGN maintains a competitive segmentation performance while achieving a significantly compact model size (from $1.8\\times $ to $237.6\\times $ reduction), a fast prediction time (from $1.2\\times $ to $67.5\\times $ faster), and a well-calibrated uncertainty measure. We also introduce a new lane dataset of 10,000 images for objective evaluation in pedestrian lane detection research.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "segmentation",
+        "other_cnn"
+      ],
+      "cv_tasks": [
+        "segmentation"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.tra.2022.103576",
+      "title": "Modeling of low-risk behavior of pedestrian movement based on dynamic data analysis",
+      "abstract": "Pedestrian movements constitute a complex self-organizing system in which various potential risks and conflicts are introduced by the accumulation of randomness and inconsistency over time. Due to the lack of relevant data, knowledge of low-risk behavior identification and risk formation mechanisms in pedestrian movement is insufficient. In this study, we present probable risk indicators reflecting the consistency of a crowd's state and establish a pedestrian risk identification model that provides an early warning method for safety and security management. A complete pedestrian movement risk identification process is summarized by converting real-world video files into calculable data via video recognition technology, making it possible to identify and obtain crowd risk information in real-time and locate abnormal phenomena. The process makes extensive use of hierarchical and machine learning methods for identifying pedestrian states, proposes quantified conflict-prone and congestion-prone indices to classify different risk types, and defines an improved “crowd risk” index for locating potential crowd dangers. The combination of video recognition technology with machine learning has apparent advantages in solving potential risks in pedestrian movement, particularly in terms of the risk identification rate, the effectiveness of the risk classification, and the accuracy of risk positioning. Results showed that the three-stage risk identification process could accurately determine congestion and conflicting risks and indicate the potential risk-prone in the crowd. The proposed method has significantly improved the output and description accuracy compared with other methods in terms of risk positioning.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "classification_recognition",
+        "anomaly_detection"
+      ],
+      "analysis_methods": [
+        "machine_learning_model"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.14627/gis.science.2025.1.4",
+      "title": "AUTOMATIC SURFACE ANALYSATION OF BIKE PATHS WITH ARTIFICIAL INTELLIGENCE",
+      "abstract": "In this paper, a multi-stage approach is presented that uses machine learning methods to determine the surface condition of bicycle lanes. This approach uses a low-threshold acquisition method through smartphone-generated video data for image recognition to automatically detect and classify the surface condition and its state. The results are displayed on digital maps to increase their level of detail. The aim is to improve the safety and comfort of cyclists and to enable better maintenance of the paths.",
+      "sensor_platforms": [
+        "smartphone"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "detection",
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "spatial_gis_analysis"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1088/2515-7620/ae5edc",
+      "title": "Seasonal variation in outdoor thermal comfort and its influence on pedestrian behavior in a severely cold city in Northeast China",
+      "abstract": "Understanding seasonal variations in outdoor thermal comfort and their behavioral implications is essential for climate-responsive urban design, particularly in severely cold regions, where extreme weather conditions strongly influence pedestrian experience. This study examines thermal perception and crowd behavior on urban pedestrian streets across different seasons in Harbin, a representative city in the severe cold region of Northeast China. Field measurements were conducted during the cold, hot, and transitional seasons, integrating meteorological observations (air temperature, humidity, globe temperature, wind speed, and solar radiation), Universal Thermal Climate Index (UTCI) calculations, subjective questionnaire surveys (n = 1225), and behavioral mapping based on video analysis. The results revealed clear seasonal differences in thermal perception. The neutral UTCI temperature was lower in the transitional seasons (23.5 °C) than in the hot season (25.1 °C). These seasonal differences were consistent with the theoretical framework of alliesthesia, under which identical UTCI values produced different perceptual responses depending on the seasonal context. During the transitional seasons, thermal perception was jointly affected by multiple meteorological variables, whereas in the extreme seasons, air temperature was the dominant factor. In addition, pedestrian expectations of thermal comfort shifted beyond specific temperature thresholds, suggesting adaptive behavioral responses to seasonal conditions. Pedestrian volume, activity duration, and overall flow rate generally peaked near the thermal neutral boundary and gradually declined as UTCI shifted toward warmer conditions. Although this study provides new evidence on how thermal comfort is associated with pedestrian behavior across seasons in cold-climate cities, the analyses reflect statistical associations rather than causal relationships. These findings contribute to climate-responsive urban design strategies and provide scientific evidence for improving outdoor thermal environments in winter cities and optimizing seasonal street management.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "counting"
+      ],
+      "analysis_methods": [
+        "statistical_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "secondary_or_validation",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/app15105394",
+      "title": "Harnessing Semantic and Trajectory Analysis for Real-Time Pedestrian Panic Detection in Crowded Micro-Road Networks",
+      "abstract": "Pedestrian panic behavior is a primary cause of overcrowding and stampede accidents in public micro-road network areas with high pedestrian density. However, reliably detecting such behaviors remains challenging due to their inherent complexity, variability, and stochastic nature. Current detection models often rely on single-modality features, which limits their effectiveness in complex and dynamic crowd scenarios. To overcome these limitations, this study proposes a contour-driven multimodal framework that first employs a CNN (CDNet) to estimate density maps and, by analyzing steep contour gradients, automatically delineates a candidate panic zone. Within these potential panic zones, pedestrian trajectories are analyzed through LSTM networks to capture irregular movements, such as counterflow and nonlinear wandering behaviors. Concurrently, semantic recognition based on Transformer models is utilized to identify verbal distress cues extracted through Baidu AI’s real-time speech-to-text conversion. The three embeddings are fused through a lightweight attention-enhanced MLP, enabling end-to-end inference at 40 FPS on a single GPU. To evaluate branch robustness under streaming conditions, the UCF Crowd dataset (150 videos without panic labels) is processed frame-by-frame at 25 FPS solely for density assessment, whereas full panic detection is validated on 30 real Itaewon-Stampede videos and 160 SUMO/Unity simulated emergencies that include explicit panic annotations. The proposed system achieves 91.7% accuracy and 88.2% F1 on the Itaewon set, outperforming all single- or dual-modality baselines and offering a deployable solution for proactive crowd safety monitoring in transport hubs, festivals, and other high-risk venues.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "other_cnn",
+        "other"
+      ],
+      "cv_tasks": [
+        "counting",
+        "trajectory_extraction",
+        "anomaly_detection"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "mixed",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1061/9780784486207.034",
+      "title": "Distraction at the Crossroads: Analyzing Pedestrian Behavior and Distraction Prevalence at Signalized Intersections in the District of Columbia",
+      "abstract": "This study examines pedestrian distraction patterns at signalized intersections in Washington, DC, through a comprehensive analysis of survey data and video observations. The research employs multinomial logistic regression analysis of survey response and the Apriori algorithm for video data analysis at 15 representative intersections during peak hours. Initial survey analysis revealed an uneven distribution among distraction levels, with the balanced model showing strong performance in identifying non-distracted individuals. The model identified electronic device usage, noise cancellation technology, and walking in groups as significant predictors of multiple distractions, while older pedestrians were less likely to be distracted. Video analysis through association rule mining revealed location-specific variations in distraction patterns, particularly during afternoon periods when social interaction strongly predicted device usage. These findings provide evidence-based insights for urban planners, suggesting that effective safety interventions should consider both social dynamics and location-specific characteristics at signalized intersections.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "other"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.ssci.2016.09.002",
+      "title": "Studying critical pedestrian behavioral changes for the safety assessment at signalized crosswalks",
+      "abstract": "Pedestrian-vehicle conflicts are one of the most important safety concerns at signalized intersections especially in urban areas. Conflicting vehicles and pedestrians select their maneuvers by predicting the other user behavior. Sudden behavioral changes of pedestrians such as sudden speed change (acceleration or deceleration) cannot be predicted by drivers, which can lead to safety hazards especially if these sudden behavioral changes occur near conflict areas. In this study, continuous pedestrian speed profiles were analyzed at signalized crosswalks to investigate the existence of such behavioral changes. A methodology is proposed to identify significant sudden changes of pedestrian speeds. The locations and timings of these sudden speed change events were analyzed, and the influencing factors such as crosswalk geometry and signal timing were studies and evaluated. Five signalized crosswalks at three intersections in Nagoya City were videotaped for analysis. Individual pedestrian maneuvers were extracted with image processing software. Empirical analysis showed that sudden acceleration events were observed at the entrance points to the pedestrian-vehicle conflict area, which highlights the significance of these events to pedestrian-vehicle conflict analysis. A multinomial logit model was developed to estimate the probability of a pedestrian making a sudden speed change as a function of different influencing factors. The results implied that the entering speed, necessary speed to finish crossing before the onset of the pedestrian signal red phase, and crosswalk length have a significant impact on speed change choices. This paper presents important suggestions to understanding pedestrian maneuvers in detail from the viewpoint of safety.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "trajectory_extraction",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "statistical_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1080/10630732.2020.1715158",
+      "title": "Pedestrian and Bicycle Volume Data Collection Using Drone Technology",
+      "abstract": "Pedestrian and bicycle volume data is one of the most fundamental types of data for active transportation planning. However, they are not yet well developed. This paper explores an innovative method that uses drone technology to collect pedestrian and bicycle volume data. It confirms the feasibility of the technology as an alternative method to collect complex movements of pedestrians and bicycles. Furthermore, this paper presents a method that converts the video footage to a spatiotemporal dataset. The dataset includes not only the pedestrian and bicycle count data, but also their behavior and characteristics. The spatiotemporal data can become a valuable resource for a variety of active transportation planning practices and research, including the collection of pedestrian and bicycle volume data in parks and recreational areas, the study of collisions between pedestrians and bicycles, and the analysis of the social path. Since it is possible to envision that the development of technologies can overcome current technical difficulties, such as battery lifespan, it is worth considering the application of drone technology to active transportation planning practice and research.",
+      "sensor_platforms": [
+        "drone_uav"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "counting",
+        "trajectory_extraction"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians_and_cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1177/03611981251341354",
+      "title": "Analyzing Bicycle Riding Characteristics Based on Naturalistic Urban Drone Observations: Free Riding, Following Behavior, and Overtaking Maneuvers",
+      "abstract": "Despite the increasing share of nonmotorized road users, several aspects relating to modeling and planning insights have not yet been sufficiently addressed in research. The behavior of bicyclists in simulation models often differs from their real-world riding style. Therefore, to identify realistic parameters, a solid database is needed to be able to address these issues. Progressive data collection methods allow for tracking individual trajectories of nonmotorized road users and analyzing their behavior. This can then be used to improve existing modeling approaches and gain further insights. In this work, we present an analysis of cyclist riding characteristics in an urban area. A trajectory data set collected by a swarm of drones in the city of Munich was used to investigate (i) acceleration behavior after a traffic light stop, (ii) following and free-flow riding scenarios, and (iii) overtaking maneuvers. In comparison with existing studies, despite great heterogeneity among the cyclists, the overall dimensions of speed, headway, and spacing were found to be similar. In addition, it was possible to gain insights relating to the development of different parameters over time, which had been difficult to determine with previous data sources. This work therefore contributes to the common understanding of cyclists’ behavior, adding another element of bicycle characteristics to the fundamentals of modeling approaches.",
+      "sensor_platforms": [
+        "drone_uav"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "not_reported"
+      ],
+      "analysis_methods": [
+        "descriptive_statistics"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/tits.2023.3330786",
+      "title": "OSRE: Object-to-Spot Rotation Estimation for Bike Parking Assessment",
+      "abstract": "Current deep models excel in object detection for classification and localization. However, precise object rotation estimation within the visual context of an input image remains underexplored due to the lack of object datasets with rotation annotations. This paper addresses these challenges by tackling rotation estimation for parked bikes with respect to their parking area. Firstly, 3D graphics were leveraged to build a camera-agnostic well-annotated Synthetic Bike Rotation Dataset (SynthBRSet). Subsequently, an object-to-spot rotation estimator (OSRE) is introduced by extending object detection to regress bike rotations in two axes. As the proposed model trained purely on synthetic data, image smoothing techniques adopted during deployment on real-world images. The proposed OSRE has undergone evaluation on both synthetic and real-world data, showing promising results. Our data and code are available at https://saghiralfasly.github.io/OSRE-Project/.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "detection",
+        "other"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "mixed",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1155/2019/8491042",
+      "title": "Improving Pedestrian Hybrid Beacon Crosswalk by Using Upstream Detection Strategy",
+      "abstract": "Walking, as a healthy and environmentally friendly mode of travel, has been revived in many cities around the world. The mid-block crosswalk (MBC) is a common type of pedestrian facility, and the pedestrian hybrid beacon (PHB) is one of most commonly used signalized MBCs, having a wide range of applications. This study applied an upstream detection (UD) strategy to PHB to reduce the pedestrian waiting time at the crossing. Data were collected through video recordings at two crosswalks at two different periods of the day in the city of Nanjing. First, basic simulation models were developed in VISSIM according to the current layout and the signal control methods of the two crosswalks. Second, signal control logic was adjusted to develop simulation models of PHB. Third, upstream detectors were added to develop simulation models of PHB with a UD strategy. Models for PHB were simulated with 10 different random seeds, and a paired t-Test was conducted to evaluate the performance of the UD strategy statistically. The results show that the UD strategy for PHB reduces pedestrian waiting time and increases vehicle delay. However, the reduction in pedestrian waiting time is greater than the increase in vehicle delay. The UD strategy has also been found to be more effective for crosswalks, with relatively short crossing lengths and low pedestrian volume. Finally, a discussion about factors concerned with the application of UD strategies in practice is carried out.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "not_reported"
+      ],
+      "analysis_methods": [
+        "simulation_or_game_theory",
+        "statistical_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "secondary_or_validation",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/itsc48978.2021.9564853",
+      "title": "Learning to Detect Pedestrian Flow in Traffic Intersections from Synthetic Data",
+      "abstract": "Detecting the pedestrian flow from different directions at a traffic intersection has always been a challenging task. Challenges include different crowd densities, occlusions, lack of available data and so on. Emergence of deep learning and computer vision methods has shown potentials to deal with this problem. Most of the recent works focus on detecting combined pedestrian flow or counting the total number of pedestrians. In this work, we propose to detect not only combined pedestrian flow but also pedestrian flows from different directions on a crosswalk at a traffic intersection. Our main contributions are summarized as follows: 1) we introduce a synthetic dataset that we create using computer game and a real-world dataset we collect from the street; 2) we propose a Pedestrian Counting Network (PCNet) to count pedestrians from different directions along a crosswalk and then propose a Pedestrian Flow Inference Model (PFIM) to infer the pedestrian flow parameters of volume and density; 3) we design a structure-aware domain adaptation for learning from synthetic data to real data. The experimental results show the effectiveness and accuracy of the proposed method.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "other_cnn"
+      ],
+      "cv_tasks": [
+        "counting"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "mixed",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/itsc57777.2023.10422669",
+      "title": "An Interpretable Machine Learning-Based Analysis of Vehicle Yielding During Pedestrian-Vehicle Interactions at Unsignalized Intersections",
+      "abstract": "The paper introduces an interpretable machine learning technique SHAP (SHapley Additive exPlanation) to analyze the vehicle yielding behaviors during pedestrian-vehicle interactions at unsignalized intersections. The study first extracts trajectory data from drone videos and then exploits machine learning methods to construct the yielding classification model. The results indicate that Random Forest (RF) outperforms Support Vector Machine (SVM), Gradient Boosting Machine (GBM), and eXtreme Gradient Boosting (XGBoost), achieving the best classification performance with an area under the ROC curve (AUC) of 0.934. Finally, the SHAP algorithm is fused with RF to improve the model interpretability. The analysis reveals that the distances between vehicles and pedestrians make the most significant impact on vehicle yielding behavior. Furthermore, it is found that traffic-related variables exhibit non-linear and threshold effects on vehicle yielding.",
+      "sensor_platforms": [
+        "drone_uav"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "trajectory_extraction"
+      ],
+      "analysis_methods": [
+        "machine_learning_model"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/tmc.2018.2868659",
+      "title": "Recognizing Textures with Mobile Cameras for Pedestrian Safety Applications",
+      "abstract": "As smartphone rooted distractions become commonplace, the lack of compelling safety measures has led to a rise in the number of injuries to distracted walkers. Various solutions address this problem by sensing a pedestrian's walking environment. Existing camera-based approaches have been largely limited to obstacle detection and other forms of object detection. Instead, we present TerraFirma, an approach that performs material recognition on the pedestrian's walking surface. We explore, first, how well commercial off-the-shelf smartphone cameras can learn texture to distinguish among paving materials in uncontrolled outdoor urban settings. Second, we aim at identifying when a distracted user is about to enter the street, which can be used to support safety functions such as warning the user to be cautious. To this end, we gather a unique dataset of street/sidewalk imagery from a pedestrian's perspective, that spans major cities like New York, Paris, and London. We demonstrate that modern phone cameras can be enabled to distinguish materials of walking surfaces in urban areas with more than 90 percent accuracy, and accurately identify when pedestrians transition from sidewalk to street.",
+      "sensor_platforms": [
+        "smartphone"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/urbansci10010055",
+      "title": "Study on Right-Turning Vehicles’ Yielding Behavior for Crossing E-Bikes at Signalized Intersections",
+      "abstract": "This study aimed to explore the factors influencing right-turning vehicles’ yielding behavior for crossing e-bikes at signalized intersections to improve safety for crossing e-bikes. Videos of different intersections were obtained through manual video recording and drone aerial photography. Spatiotemporal information data for right-turning vehicles and straight-through e-bikes were extracted through Tracker 6.0 software. Right-turning vehicle yielding decisions were categorized into three types: no yielding, decelerating to yield, and stopping to yield. Five potential variables influencing yielding decisions were selected: personal attributes of e-bike riders, traffic characteristics of e-bikes, traffic characteristics of right-turning vehicles, road characteristics, and right-turning vehicle–e-bike interaction influence characteristics. A multiple ordered logistic regression model was established to predict right-turn vehicle yielding decisions. Simultaneously calculating the OR (Odds Ratio) value reveals the likelihood of increased yielding probability under varying factors. For every one-unit increase in the number of crossing e-bikes, the yielding probability increases to 1.002 times the original value; for every one-unit increase in the average speed of right-turning vehicles, the yielding probability decreases to 0.406 times the original value; for every one-unit increase in the average crossing speed of e-bikes, the yielding probability increases to 1.737 times the original value. Compared with the straight + right-turn lane, a dedicated right-turning lane increases the yielding probability of right-turning vehicles to 4.2 times, and compared with not occupying a crosswalk, illegally occupying a crosswalk decreases the yielding probability of right-turning vehicles to 0.356 times. These findings offer valuable insights for enhancing the safety of e-bikes crossing signal-controlled intersections.",
+      "sensor_platforms": [
+        "camera_unspecified",
+        "drone_uav"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "trajectory_extraction",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "statistical_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/su11174737",
+      "title": "A surrogate video-based safety methodology for diagnosis and evaluation of low-cost pedestrian-safety countermeasures: The case of Cochabamba, Bolivia",
+      "abstract": "Due to a lack of reliable data collection systems, traffic fatalities and injuries are often under-reported in developing countries. Recent developments in surrogate road safety methods and video analytics tools offer an alternative approach that can be both lower cost and more time efficient when crash data is incomplete or missing. However, very few studies investigating pedestrian road safety in developing countries using these approaches exist. This research uses an automated video analytics tool to develop and analyze surrogate traffic safety measures and to evaluate the effectiveness of temporary low-cost countermeasures at selected pedestrian crossings at risky intersections in the city of Cochabamba, Bolivia. Specialized computer vision software is used to process hundreds of hours of video data and generate data on road users' speed and trajectories. We find that motorcycles, turning movements, and roundabouts, are among the key factors related to pedestrian crash risk, and that the implemented treatments were effective at four-legged intersections but not at traditional-design roundabouts. This study demonstrates the applicability of the surrogate methodology based on automated video analytics in the Latin American context, where traditional methods are challenging to implement. The methodology could serve as a tool to rapidly evaluate temporary treatments before they are permanently implemented and replicated.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "trajectory_extraction",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "surrogate_safety_indicators"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1145/3652920.3653056",
+      "title": "E-Scooter Dynamics: Unveiling Rider Behaviours and Interactions with Road Users through Multi-Modal Data Analysis",
+      "abstract": "Electric scooters (e-scooters), characterised by their small size and lightweight design, have revolutionised urban commuting experiences. Their adaptability to multiple mobility infrastructures introduces advantages for users, enhancing the efficiency and flexibility of urban transit. However, this versatility also causes potential challenges, including increased interactions and conflicts with other road users. Previous research has primarily focused on historical trip data, leaving a gap in our understanding of real-time e-scooter user behaviours and interactions. To bridge this gap, we propose a novel multi-modal data collection and integrated data analysis methodology, aimed at capturing the dynamic behaviours of e-scooter riders and their interactions with other road users in real-world settings. We present the study setup and the analysis approach we used for an in the wild study with 15 participants, each traversing a pre-determined route equipped with off-the-shelf commercially available devices (e.g., cameras, bike computers) and eye-tracking glasses.",
+      "sensor_platforms": [
+        "bicycle_or_rider_mounted",
+        "wearable_body_worn"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "not_reported"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "unclear",
+      "road_users": "scooter_micromobility",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.4271/2016-22-0008",
+      "title": "Traffic Accidents Involving Cyclists Identifying Causal Factors Using Questionnaire Survey, Traffic Accident Data, and Real-World Observation",
+      "abstract": "The purpose of this study is to clarify the mechanism of traffic accidents involving cyclists. The focus is on the characteristics of cyclist accidents and scenarios, because the number of traffic accidents involving cyclists in Tokyo is the highest in Japan. First, dangerous situations in traffic incidents were investigated by collecting data from 304 cyclists in one city in Tokyo using a questionnaire survey. The survey indicated that cyclists used their bicycles generally while commuting to work or school in the morning. Second, the study investigated the characteristics of 250 accident situations involving cyclists that happened in the city using real-world bicycle accident data. The results revealed that the traffic accidents occurred at intersections of local streets, where cyclists collided most often with vehicles during commute time in the morning. Third, cyclists' behavior was observed at a local street intersection in the morning in the city using video pictures. In one hour during the morning commute period, 250 bicycles passed through the intersection. The results indicated that one of the reasons for traffic accidents involving cyclists might be the combined effect of low visibility, caused by the presence of box-like building structures close to the intersections, and the cyclists' behavior in terms of their velocity and no confirming safety. It was observed that, on average, bicycle velocity was 3.1 m/s at the initial line of an intersection. The findings from this study could be useful in developing new technologies to improve cyclist safety, such as alert devices for cyclists and vehicle drivers, wireless communication systems between cyclists and vehicle drivers, or advanced vehicles with bicycle detection and collision mitigation systems.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "counting",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "descriptive_statistics"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "secondary_or_validation",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/isctis51085.2021.00011",
+      "title": "Research on risk analysis of pedestrian and vehicle flow in community scenes based on machine vision",
+      "abstract": "Surveillance video is vital to community emergency management and risk control. Existing surveillance video analysis has limitations of low utilization, low sharing rate and low data correlation analysis rate. Based on these shortcomings, this paper reports a framework of community risk identification and warning using machine vision to analyze surveillance video. The prototype is based on the YOLOV4 video analysis network, which extracts and records spatio-Temporal coordinate data of key categories of people, vehicles and objects related to community risks. The data are computed to obtain key state information about the direction of flow, speed and range of activity. By analyzing the logical, inclusive and spatio-Temporal relationships among objects, the process makes risk judgment in real-Time and provides early warning of visualization results. In addition, by accumulating historical data to discover potential dangers, the level of community services are optimized and the construction of smart communities are accelerated. This paper introduces a community risk management and prevention framework based on machine vision, which focuses on networking, sharing and exchanging of video resources as well as multi-dimensional association of video big data. Through real-Time surveillance and early warning of risks, analysis and research, the study aims at the visualization, monitorability and early warning of smart community operation.",
+      "sensor_platforms": [
+        "fixed_infrastructure_camera"
+      ],
+      "method_families": [
+        "yolo"
+      ],
+      "cv_tasks": [
+        "detection",
+        "trajectory_extraction",
+        "measurement_speed_distance",
+        "anomaly_detection"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "existing_infrastructure",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/futuretransp1020022",
+      "title": "Deep Learning Architectures for Skateboarder–Pedestrian Surrogate Safety Measures",
+      "abstract": "Skateboarding as a method of transportation has become prevalent, which has increased the occurrence and likelihood of pedestrian–skateboarder collisions and near-collision scenarios in shared-use roadway areas. Collisions between pedestrians and skateboarders can result in significant injury. New approaches are needed to evaluate shared-use areas prone to hazardous pedestrian–skateboarder interactions, and perform real-time, in situ (e.g., on-device) predictions of pedestrian–skateboarder collisions as road conditions vary due to changes in land usage and construction. A mechanism called the Surrogate Safety Measures for skateboarder–pedestrian interaction can be computed to evaluate high-risk conditions on roads and sidewalks using deep learning object detection models. In this paper, we present the first ever skateboarder–pedestrian safety study leveraging deep learning architectures. We view and analyze state of the art deep learning architectures, namely the Faster R-CNN and two variants of the Single Shot Multi-box Detector (SSD) model to select the correct model that best suits two different tasks: automated calculation of Post Encroachment Time (PET) and finding hazardous conflict zones in real-time. We also contribute a new annotated data set that contains skateboarder–pedestrian interactions that has been collected for this study. Both our selected models can detect and classify pedestrians and skateboarders correctly and efficiently. However, due to differences in their architectures and based on the advantages and disadvantages of each model, both models were individually used to perform two different set of tasks. Due to improved accuracy, the Faster R-CNN model was used to automate the calculation of post encroachment time, whereas to determine hazardous regions in real-time, due to its extremely fast inference rate, the Single Shot Multibox MobileNet V1 model was used. An outcome of this work is a model that can be deployed on low-cost, small-footprint mobile and IoT devices at traffic intersections with existing cameras to perform on-device inferencing for in situ Surrogate Safety Measurement (SSM), such as Time-To-Collision (TTC) and Post Encroachment Time (PET). SSM values that exceed a hazard threshold can be published to an Message Queuing Telemetry Transport (MQTT) broker, where messages are received by an intersection traffic signal controller for real-time signal adjustment, thus contributing to state-of-the-art vehicle and pedestrian safety at hazard-prone intersections.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "rcnn_ssd_detr"
+      ],
+      "cv_tasks": [
+        "detection",
+        "classification_recognition",
+        "conflict_event_detection"
+      ],
+      "analysis_methods": [
+        "surrogate_safety_indicators"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "other",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1117/12.2652480",
+      "title": "Research on the Long tail distribution of pedestrian flow at signalized intersections",
+      "abstract": "Pedestrian crossing at signal-controlled intersections is a hot and challenging problem in slow traffic research. On the one hand, the signal-controlled intersection is a typical mixed traffic environment where pedestrians crossing the street as well as vehicles, will constantly conflict and threaten road traffic safety. On the other hand, compared with other parts, the tail of pedestrian flow occupies a large amount of intersections' space and time resources, which greatly hinders the passage of right-turning vehicles. Therefore, it is significant to study the characteristics of pedestrian crossing, especially the characteristics of the tail of pedestrian flow crossing at the intersections. It can not only enrich relevant research and provide reference for optimizing the timing of intersection signals, but also improve the pedestrian crossing environment and alleviating traffic congestion. In this paper, the video data of the intersection of Yanta North Road and Jianxi Street, the intersection of Xiaozhai West Road and Hanguang Road, as well as the intersection of Keji Second Road and Taibai South Road were collected by UAV. The track data of pedestrians and vehicles were extracted by OpenCV, YoloV3 and DeepSort. The pedestrian quantity-time curve was plotted for single one way and multiple two way street crossings. It is found that there is a good fitting effect between the curve and one-dimensional Gaussian function. Based on this, the actual speed and average waiting time of right-turning vehicles passing the crosswalk are compared respectively under the long tail distribution of different significance degrees. The result shows the long tail distribution of pedestrian crossing can obviously reduce the speed of right-turning vehicles and prolong the average waiting time.",
+      "sensor_platforms": [
+        "drone_uav"
+      ],
+      "method_families": [
+        "yolo",
+        "multi_object_tracking"
+      ],
+      "cv_tasks": [
+        "detection",
+        "tracking",
+        "trajectory_extraction",
+        "counting",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "statistical_model"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1007/978-981-96-2080-7_19",
+      "title": "Safety Assessment and Early Warning System for Electric Bikes Using Head-Mounted Camera Technology",
+      "abstract": "With the widespread of the electric bikes in the urban traffic, it has become more and more important for the research on assessing the security and early warning system. This study aims to investigate safety assessment and early warning systems for electric bikes using head-mounted camera technology. By utilizing computer vision and deep learning techniques, the safety assessment and real-time warnings can be accurate and reliable. In this study, we design an environment perception algorithm based on head-mounted camera data. By analyzing the images from the rider's perspective, potential hazards such as pedestrians, vehicles, and other bikes can be detected and identified. In this process, deep learning algorithms are applied to train models that are able to understand and interpret the rider's field of view, accurately recognizing factors that may pose threats to electric bike safety. Finally, we integrate the safety assessment and behavior analysis results into a comprehensive early warning system. This system analyzes data captured by the head-mounted camera, continuously monitors the safety status of the rider, and issues alerts when potential dangers are detected, providing real-time safety information and guidance for electric bikes.",
+      "sensor_platforms": [
+        "bicycle_or_rider_mounted"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "detection",
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.engappai.2026.114440",
+      "title": "Deep learning-driven digital twin system for pedestrian tracking and evacuation load assessment in public spaces",
+      "abstract": "Real-time pedestrian localization is essential for effective emergency evacuation in large indoor public spaces. This study presents an intelligent digital twin system for evacuation monitoring, integrating deep learning and computer vision. The system includes four components: (1) Internet of Things sensor network, (2) cloud computing server, (3) Artificial Intelligence processing engine, and (4) interactive user interface. The Artificial Intelligence engine introduces three innovations: automated detection and tracking of pedestrian coordinates using You Only Look Once-Pose (YOLO-Pose) and Deep Simple Online and Realtime Tracking (DeepSORT); transformation of multi-camera data into a unified world coordinate system; and the Multi-Object Matching Operation (MOMO) algorithm for identity association. These enable accurate detection, localization, and counting while minimizing identifiability. The system was validated in controlled experiments and a high-speed rail station waiting hall with dense, dynamic pedestrian flow. It achieves high localization precision, with a root mean square error of 5.3 cm, a mean absolute error of 4.8 cm, and a people counting accuracy of 92.34% while processing 30 frames per second video at 27.8 ms per frame. These results demonstrate the potential of the digital twin framework in intelligent evacuation management. The main contribution in Artificial Intelligence is the Multi-Object Matching Operation algorithm, and the engineering contribution is the realization of a real-time digital twin system in a large public facility.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "yolo",
+        "pose_estimation",
+        "multi_object_tracking",
+        "other"
+      ],
+      "cv_tasks": [
+        "detection",
+        "pose_estimation",
+        "tracking",
+        "counting",
+        "other"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "addressed"
+    },
+    {
+      "record_key": "doi:10.11159/iccste24.196",
+      "title": "Exploring Pedestrian Noncompliance Crossing in Complex Traffic Environment Using Computer Vision: A Case Study of Kabul City Intersections",
+      "abstract": "Noncompliance crossing is a prevalent behavior among pedestrians at intersections in low-income countries. This phenomenon exposes pedestrians to consecutive conflicts in a complex traffic environment. In Kabul city, pedestrians have severely violated behavior, particularly at major intersections on an urban arterial street, making it a high-risk location for pedestrian safety. According to previous studies [1], [2], and [3], the waiting time at the curbside, traffic volume, walking speed, pedestrian distraction, pedestrian amenities, and nearby land use are factors that influence pedestrian noncompliance behavior. However, the impact of noncompliance behaviors on pedestrian crossing speeds remains unclear in a severe consecutive conflict zone, i.e., the area with continuous pedestrian and vehicle interactions. Pedestrian crossing speed is a critical parameter to determine the efficiency of traffic operations and safety at intersections [4], [5]. Therefore, the study hypothesizes that pedestrian noncompliance behavior is positively correlated with decreased pedestrian crossing speed in conflict zones. To investigate the hypothesis, this study aims to explore how pedestrian noncompliance attributes affect pedestrian crossing speed in conflict zones of a complex traffic environment. To achieve this aim, 12-hour video data was collected over three days from the Baraki intersection in the city of Kabul. Video footage is analyzed using computer vision techniques to extract pedestrian crossing-related data from interested regions, i.e., under the influence of conflict zones at each crosswalk. Data related to pedestrian crossings were extracted by combining three main computer vision techniques: automatic detection, manual tracking, and inverse perspective mapping. To detect pedestrian noncompliance crossings, the You Only Look Once V8 (YOLOv8) deep learning model, i.e., first introduced by Redmon [6], is trained on annotated images. For tracking purposes, a Python program based on the OpenCV library is used to track pedestrian trajectories. For accuracy, inverse perspective mapping is then applied to convert pedestrian positions in the image plane to their real-world coordinates. The effect is analyzed by taking advantage of comparative statistical analysis, i.e., ANOVA and t-test, between crossing speed of pedestrians with compliance and noncompliance attributes in a microscopic scale. From the results, 87% of pedestrians were detected to engage in noncompliance crossing behavior. A total of 627 and 93 pedestrian trajectories were extracted for noncompliance and compliance crossing events, respectively. The kernel density estimation is conducted to visualize pedestrian crossing-related data in both perspective and bird’s-eye views. In contrast to the study conducted by Shaaban et al. [7], the result of the heatmaps shows that pedestrians take a longer path when crossing illegally, dictating the change in the pedestrian crossing pattern due to the occurrence of consecutive conflicts. Therefore, pedestrians are more willing to create frequent routes at corners and outside of crosswalks. The result of statistical analysis demonstrates that pedestrians have significantly lower crossing speeds (mean difference 0.07 m/s; t(2663.8) = 6.407; pvalue of ANOVA reveals that both pedestrian attributes (compliance and noncompliance crossing) and the condition of the crosswalks significantly affect pedestrian crossing speed. In conclusion, the study sheds light on pedestrian attributes in a complex traffic environment of a low-income city. The findings show that pedestrians have a lower crossing speed and a longer path when crossing intersections under the influence conflict of vehicles. The results also showed that pedestrians create several prohibited routes in the vicinity and corner of the crosswalk, indicating the complexity of traffic in the interactions studied. Furthermore, the study has limitations that need to be addressed. First, only one site is investigated. Second, factors such as built environments, age, gender, and other not considered. It recommended that this study be further expanded, and future work should consider these limitations.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "yolo",
+        "classical_cv"
+      ],
+      "cv_tasks": [
+        "detection",
+        "classification_recognition",
+        "tracking",
+        "trajectory_extraction",
+        "measurement_speed_distance"
+      ],
+      "analysis_methods": [
+        "statistical_model",
+        "descriptive_statistics"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.trip.2025.101366",
+      "title": "Using computer vision and street-level videos for pedestrian-vehicle tracking and behaviour analysis",
+      "abstract": "The extraction and exploitation of Surrogate Safety Measures (SSMs) have gained prominence in recent years, aided by rapid emerging technologies. SSMs can be applied in all aspects of safety, enabling new insights for analysing road user behaviour. In this context, this paper presents an integrated framework for tracking pedestrians and vehicles in complex urban environments, with a focus on analysing behaviours in relation to the traffic light status and the computation of the Time-to-Collision (TTC). Utilising advanced computer vision object detection and the feature extraction models of YOLOv8 and ResNet-50, this framework integrates Kalman filtering, homography transformations, and object re-identification to achieve high accuracy. The data used for this study were roadside video recordings from the Athens centre (Greece). Notably, the results show accuracy rates of 50 % to 70 % in detecting traffic light statuses and identified a 23 % discrepancy on average between manual and automated counts of illegal crossings. One of the key strengths and contributions of the study is the utilisation and transformation of street-level data provided by smartphone camera recordings, which emphasise the ease of transferability of the proposed approach without the requirements of specialised, costly, or heavy equipment. The analysis of pedestrian compliance, particularly during intergreen phases, provides novel knowledge on pedestrian behaviour and highlights opportunities to improve intersection design for safety. This study underscores the potential of computer vision detection systems to provide reliable, real-time data that takes the road network conditions into account, ultimately contributing to safer urban traffic management and informed policy decisions.",
+      "sensor_platforms": [
+        "smartphone"
+      ],
+      "method_families": [
+        "yolo",
+        "other_cnn",
+        "multi_object_tracking",
+        "classical_cv"
+      ],
+      "cv_tasks": [
+        "detection",
+        "tracking",
+        "classification_recognition",
+        "counting"
+      ],
+      "analysis_methods": [
+        "surrogate_safety_indicators",
+        "descriptive_statistics"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1016/j.aap.2016.04.035",
+      "title": "Cross-comparison of three surrogate safety methods to diagnose cyclist safety problems at intersections in Norway",
+      "abstract": "Relying on accident records as the main data source for studying cyclists’ safety has many drawbacks, such as high degree of under-reporting, the lack of accident details and particularly of information about the interaction processes that led to the accident. It is also an ethical problem as one has to wait for accidents to happen in order to make a statement about cyclists’ (un-)safety. In this perspective, the use of surrogate safety measures based on actual observations in traffic is very promising. In this study we used video data from three intersections in Norway that were all independently analysed using three methods: the Swedish traffic conflict technique (Swedish TCT), the Dutch conflict technique (DOCTOR) and the probabilistic surrogate measures of safety (PSMS) technique developed in Canada. The first two methods are based on manual detection and counting of critical events in traffic (traffic conflicts), while the third considers probabilities of multiple trajectories for each interaction and delivers a density map of potential collision points per site. Due to extensive use of microscopic data, PSMS technique relies heavily on automated tracking of the road users in video. Across the three sites, the methods show similarities or are at least “compatible” with the accident records. The two conflict techniques agree quite well for the number, type and location of conflicts, but some differences with no obvious explanation are also found. PSMS reports many more safety-relevant interactions including less severe events. The location of the potential collision points is compatible with what the conflict techniques suggest, but the possibly significant share of false alarms due to inaccurate trajectories extracted from video complicates the comparison. The tested techniques still require enhancement, with respect to better adjustment to analysis of the situations involving cyclists (and vulnerable road users in general) and further validation. However, we believe this to be a future direction for the road safety analysis as the number of accidents is constantly decreasing and the quality of accident data does not seem to improve.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "cv_unspecified"
+      ],
+      "cv_tasks": [
+        "tracking",
+        "trajectory_extraction",
+        "conflict_event_detection"
+      ],
+      "analysis_methods": [
+        "surrogate_safety_indicators"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.1109/avss61716.2024.10672588",
+      "title": "PedRiskNet: Classifying Pedestrian Situations in Surveillance Videos for Pedestrian Safety Monitoring in Smart Cities",
+      "abstract": "In the context of smart cities, pedestrian safety enhancement through visual AI-based technology is crucial. While pedestrian detection and tracking have been extensively studied, classifying pedestrian situations for immediate risk assessment remains challenging. Existing methods often fail to consider the broader context of unsafe situations of pedestrians or rely solely on pedestrian detection. To address this gap, we propose a novel pedestrian situation classification method incorporating ground region estimation and multi-modal fusion. By utilizing semantic segmentation and temporal consistency, we estimate ground region maps to mitigate occlusion effects. The proposed method fuses multi-modal features from the local surroundings and ground regions, allowing for accurate classification of pedestrian situations. Experimental results on a public dataset recorded in school zones demonstrate superior performance compared to baseline models. This approach holds significant potential for improving pedestrian safety in smart cities, enabling proactive measures and interventions to mitigate risks and enhance overall road safety.",
+      "sensor_platforms": [
+        "fixed_infrastructure_camera"
+      ],
+      "method_families": [
+        "segmentation",
+        "other_cnn"
+      ],
+      "cv_tasks": [
+        "segmentation",
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "public_dataset",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/s23135928",
+      "title": "Pedestrian Crossing Sensing Based on Hough Space Analysis to Support Visually Impaired Pedestrians",
+      "abstract": "There are many visually impaired people globally, and it is important to support their ability to walk independently. Acoustic signals and escort zones have been installed on pedestrian crossings for the visually impaired people to walk safely; however, pedestrian accidents, including those involving the visually impaired, continue to occur. Therefore, to realize safe walking for the visually impaired on pedestrian crossings, we present an automatic sensing method for pedestrian crossings using images from cameras attached to them. Because the white rectangular stripes that mark pedestrian crossings are aligned, we focused on the edges of these rectangular stripes and proposed a novel pedestrian crossing sensing method based on the dispersion of the slope of a straight line in Hough space. Our proposed method possesses unique characteristics that allow it to effectively handle challenging scenarios that traditional methods struggle with. It excels at detecting crosswalks even in low-light conditions during nighttime when illumination levels may vary. Moreover, it can detect crosswalks even when certain areas are partially obscured by objects or obstructions. By minimizing computational costs, our method achieves high real-time performance, ensuring efficient and timely crosswalk detection in real-world environments. Specifically, our proposed method demonstrates an impressive accuracy rate of 98.47%. Additionally, the algorithm can be executed at almost real-time speeds (approximately 10.5 fps) using a Jetson Nano small-type computer, showcasing its suitability as a wearable device.",
+      "sensor_platforms": [
+        "wearable_body_worn"
+      ],
+      "method_families": [
+        "classical_cv"
+      ],
+      "cv_tasks": [
+        "detection"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "not_reported",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.7307/ptt.v32i3.3222",
+      "title": "A new traffic conflict measurefor electric bicycles at intersections",
+      "abstract": "As electric bicycles (e-bikes) are becoming popular in China, concerns have been raised about their safety conditions. A traffic conflict technique is commonly used in traffic safety analysis, and there are many conflict measures designed for cars. However, e-bikes have high flexibility to change speed and trajectories, which is different from cars, so the conflict measures defined for e-bikes need to be independently explored. Based on e-bike driving characteristics, this paper proposes a new measure, the Integrated Conflict Intensity (ICI), for traffic conflicts involving e-bikes at intersections. It measures the degree of dangerousness of a conflict process, with consideration of both conflict risk and conflict severity. Time to collision is used to measure the conflict risk. Relative kinetic energy is used to measure the conflict severity. ICI can be calculated based on video analysis. The method of determining ICI thresholds for three conflict levels (serious, less serious, and slight) and two conflict types (conflicts between two e-bikes, and conflicts between an e-bike and a car) is put forward based on the questionnaires about safety perception of e-bike riders, which is regarded as the criterion of e-bike safety conditions at intersections. The video recording and a questionnaire survey about conflicts involving e-bikes at intersections have been conducted, and the unified thresholds applicable to different intersections have been determined. It is verified that ICI and its thresholds meet the criterion of e-bike safety conditions. This work is expected to be used in the selection of intersections for safety improvement of e-bike traffic.",
+      "sensor_platforms": [
+        "camera_unspecified"
+      ],
+      "method_families": [
+        "not_reported"
+      ],
+      "cv_tasks": [
+        "conflict_event_detection"
+      ],
+      "analysis_methods": [
+        "surrogate_safety_indicators"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "cyclists",
+      "privacy": "not_mentioned"
+    },
+    {
+      "record_key": "doi:10.3390/app14156462",
+      "title": "The Development of a Prototype Solution for Detecting Wear and Tear in Pedestrian Crossings",
+      "abstract": "Crosswalks play a fundamental role in road safety. However, over time, many suffer wear and tear that makes them difficult to see. This project presents a solution based on the use of computer vision techniques for identifying and classifying the level of wear on crosswalks. The proposed system uses a convolutional neural network (CNN) to analyze images of crosswalks, determining their wear status. The design includes a prototype system mounted on a vehicle, equipped with cameras and processing units to collect and analyze data in real time as the vehicle traverses traffic routes. The collected data are then transmitted to a web application for further analysis and reporting. The prototype was validated through extensive tests in a real urban environment, comparing its assessments with manual inspections conducted by experts. Results from these tests showed that the system could accurately classify crosswalk wear with a high degree of accuracy, demonstrating its potential for aiding maintenance authorities in efficiently prioritizing interventions.",
+      "sensor_platforms": [
+        "vehicle_mounted"
+      ],
+      "method_families": [
+        "other_cnn"
+      ],
+      "cv_tasks": [
+        "classification_recognition"
+      ],
+      "analysis_methods": [
+        "not_reported"
+      ],
+      "camera_source": "deployed_for_study",
+      "camera_data_role": "main_data",
+      "road_users": "pedestrians",
+      "privacy": "not_mentioned"
+    }
+  ]
+}

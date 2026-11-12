@@ -1,0 +1,25 @@
+group,category,records,% all,2016–19,2020–22,2023–26
+CV methods,Deep learning / CNN,103,27.3,14.3,29.8,31.1
+CV methods,YOLO (any version),56,14.9,2.6,10.6,21.4
+CV methods,R-CNN / SSD / DETR,14,3.7,2.6,5.3,3.4
+CV methods,Transformer / attention,14,3.7,0.0,1.1,6.3
+CV methods,"Multi-object tracking (DeepSORT, ByteTrack, Kalman, MOT)",37,9.8,6.5,5.3,13.1
+CV methods,Segmentation,9,2.4,1.3,4.3,1.9
+CV methods,Pose / skeleton,12,3.2,1.3,2.1,4.4
+CV methods,Trajectory prediction / LSTM,23,6.1,0.0,7.4,7.8
+CV methods,"Classical CV (optical flow, HOG, SVM, background subtraction)",18,4.8,11.7,6.4,1.5
+CV methods,LLM / VLM / foundation model,8,2.1,0.0,0.0,3.9
+Sensors and platforms,Fixed / CCTV / traffic / roadside camera,73,19.4,20.8,19.1,18.9
+Sensors and platforms,Drone / UAV,65,17.2,7.8,8.5,24.8
+Sensors and platforms,Vehicle-mounted / dashcam,6,1.6,1.3,0.0,2.4
+Sensors and platforms,Wearable / bike- or rider-mounted,9,2.4,0.0,2.1,3.4
+Sensors and platforms,Smartphone,14,3.7,6.5,2.1,3.4
+Sensors and platforms,Fisheye / 360°,3,0.8,0.0,1.1,1.0
+Sensors and platforms,Depth / stereo / LiDAR or radar fusion,12,3.2,2.6,2.1,3.9
+Sensors and platforms,Edge / embedded hardware / IoT,20,5.3,1.3,4.3,7.3
+Specific application terms,Crossing / crosswalk,158,41.9,36.4,40.4,44.7
+Specific application terms,Surrogate safety / near-miss / conflict analysis,71,18.8,13.0,19.1,20.9
+Specific application terms,Sidewalk / bike lane / shared path,34,9.0,6.5,6.4,11.2
+Specific application terms,Helmet use,7,1.9,0.0,0.0,3.4
+Specific application terms,Signal control,33,8.8,9.1,8.5,8.7
+Specific application terms,Assistive / visually impaired,21,5.6,3.9,10.6,3.9

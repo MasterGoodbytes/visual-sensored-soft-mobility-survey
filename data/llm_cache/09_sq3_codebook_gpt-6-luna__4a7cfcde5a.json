@@ -1,0 +1,92 @@
+[
+ {
+  "label": "locomotion_kinematics",
+  "definition": "Measures individual movement such as speed, acceleration, gait, and motion trajectories. Examples: #0, #1, #119.",
+  "examples": [
+   0,
+   1,
+   119
+  ]
+ },
+ {
+  "label": "traffic_flow_crowding",
+  "definition": "Assesses road-user counts, volumes, flow, density, queues, or waiting in pedestrian and micromobility spaces. Examples: #5, #54, #259.",
+  "examples": [
+   5,
+   54,
+   259
+  ]
+ },
+ {
+  "label": "crossing_decisions_compliance",
+  "definition": "Examines crossing choices, intentions, gap acceptance, signal compliance, and other rule-following at crossings. Examples: #29, #39, #107.",
+  "examples": [
+   29,
+   39,
+   107
+  ]
+ },
+ {
+  "label": "interactions_conflicts_safety",
+  "definition": "Assesses encounters among pedestrians, cyclists, scooter users, and vehicles, including yielding, near-conflicts, and collision risk. Examples: #8, #14, #31.",
+  "examples": [
+   8,
+   14,
+   31
+  ]
+ },
+ {
+  "label": "spatial_paths_positioning",
+  "definition": "Examines routes, path shapes, lane or roadway position, and spatial movement choices. Examples: #16, #167, #239.",
+  "examples": [
+   16,
+   167,
+   239
+  ]
+ },
+ {
+  "label": "attention_distraction_perception",
+  "definition": "Assesses gaze, visual attention, distraction, or awareness of surrounding traffic and obstacles. Examples: #17, #66, #333.",
+  "examples": [
+   17,
+   66,
+   333
+  ]
+ },
+ {
+  "label": "user_characteristics_modes",
+  "definition": "Examines road-user demographics, abilities, travel modes, protective equipment, or differences between user groups. Examples: #70, #110, #349.",
+  "examples": [
+   70,
+   110,
+   349
+  ]
+ },
+ {
+  "label": "abnormal_behavior_emergency",
+  "definition": "Assesses atypical movement or behavior, including falls, panic, lingering, and evacuation responses. Examples: #64, #67, #220.",
+  "examples": [
+   64,
+   67,
+   220
+  ]
+ },
+ {
+  "label": "infrastructure_environment_conditions",
+  "definition": "Examines how facilities and ambient conditions—such as lighting, weather, thermal conditions, or surface quality—relate to movement or safety. Examples: #104, #120, #280.",
+  "examples": [
+   104,
+   120,
+   280
+  ]
+ },
+ {
+  "label": "hazards_accessibility_cues",
+  "definition": "Assesses environmental hazards, signs, signals, crossings, or other features relevant to safe and accessible travel. Examples: #81, #139, #225.",
+  "examples": [
+   81,
+   139,
+   225
+  ]
+ }
+]
